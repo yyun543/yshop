@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-全部分类</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/allClassify.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper">
+            <header class="header noborder">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">全部分类</div>        
+            </header>
+            <div class="allClassify-wrap" id="AllClassify_Wrap">
+                <div class="first-cat">
+                    <ul>
+                        <li class="first-cat-item" data-gcid="1">
+                            <div class="dot"></div>
+                            <h2>一级分类的名称</h2>
+                            <div class="arrow iconfont icon-right"></div>
+                        </li>
+                        <li class="first-cat-item" data-gcid="2">
+                            <div class="dot"></div>
+                            <h2>一级分类的名称</h2>
+                            <div class="arrow iconfont icon-right"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="second-cat-item" id="sc_1">
+                    <div class="close_layer" data-gcid="1"></div>
+                    <div class="s-cat-item-c">
+                        <div class="first-cat-name">
+                            <p>一级分类的名称</p>
+                            <div class="close-icon iconfont icon-roundclose" data-gcid="1"></div>
+                        </div>
+                        <div class="sec-cat-list">
+                            <h4 class="sec-cat-name">二级分类的名称</h4>
+                            <ul class="clearfix">
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                            </ul>
+
+                            <h4 class="sec-cat-name">二级分类的名称</h4>
+                            <ul class="clearfix">
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                            </ul>
+
+                            <h4 class="sec-cat-name">二级分类的名称</h4>
+                            <ul class="clearfix">
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-cat-item" id="sc_2">
+                    <div class="close_layer" data-gcid="2"></div>
+                    <div class="s-cat-item-c">
+                        <div class="first-cat-name">
+                            <p>一级分类的名称1111</p>
+                            <div class="close-icon iconfont icon-roundclose" data-gcid="2"></div>
+                        </div>
+                        <div class="sec-cat-list">
+                            <h4 class="sec-cat-name">二级分类的名称111</h4>
+                            <ul class="clearfix">
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                            </ul>
+
+                            <h4 class="sec-cat-name">二级分类的名称</h4>
+                            <ul class="clearfix">
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                            </ul>
+
+                            <h4 class="sec-cat-name">二级分类的名称</h4>
+                            <ul class="clearfix">
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                                <li><a href="">三级分类的名称</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        
+<!-- 页面加载loading -->
+<div id="pageLoading"></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+
+<script>
+    $("#AllClassify_Wrap,.close_layer,.sec-cat-list,.second-cat-item").css("height",winH);
+    $(".second-cat-item .s-cat-item-c .sec-cat-list").css("height",winH-80);
+
+
+    $(".first-cat-item").on("click",function(){
+        var first_gcid = $(this).data("gcid");
+        $("#sc_"+first_gcid).addClass("move-r-640");        
+    });
+
+    $(".close-icon,.close_layer").on("click",function(){
+        var first_gcid = $(this).data("gcid");
+        $("#sc_"+first_gcid).removeClass("move-r-640");
+    });
+</script>
+</body>
+</html>

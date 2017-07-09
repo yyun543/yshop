@@ -1,0 +1,10 @@
+.logistics{width: 640px;}
+.logistics .info{padding: 10px 20px;font-size: 24px;color: #666;background: #fff;border-bottom: 1px solid #e5e5e5;}
+.logistics .route .route-unit{position: relative;padding: 20px 10px 0 80px;}
+.logistics .route .lastest{background: #fff;}
+.logistics .route .lastest .sign{position: absolute;top: 10px;left: 20px;color: #ff3333;font-size: 36px;}
+.logistics .route .lastest h3{color: #202020;}
+.logistics .route .route-unit .line{position: absolute;top: -78px;left:37px; width: 1px;height: 100px;background: #cccccc;}
+.logistics .route .route-unit .dot{position: absolute;top: 37px;left: 29px; width: 18px;height: 18px;border-radius: 50%;background: #cccccc;}
+.logistics .route .route-unit .txt{border-bottom: 1px solid #e5e5e5;color: #666;}
+.logistics .route .route-unit .txt p{margin-top: 10px; padding-bottom: 20px;color: #999;}

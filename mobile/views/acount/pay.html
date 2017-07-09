@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-支付提交</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/acount.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper">
+            <header class="header noborder">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">支付提交</div>
+            </header>
+            <div class="acount-wrapper">
+                <form action="index.php?act=payment&amp;op=pd_order" method="POST" id="buy_form">
+                    <input type="hidden" name="pdr_sn" value="">
+                    <input type="hidden" id="payment_code" name="payment_code" value="alipay">
+                    <div class="payment-info">
+                        <div class="title">
+                            <p>您已申请账户余额充值，请立即在线支付！</p>
+                            <p> 充值金额：￥100.00  元</p>
+                            <p>充值单号 : 500504382310908010</p>
+                        </div>
+                        <div class="payment-list">
+                            <span>支付选择：</span>
+                            <ul>
+                                <li payment_code="alipay" class="using">
+                                    <label for="pay_alipay">
+                                        <i></i>
+                                        <div class="logo" for="pay_2"> <img src="/static/mobile/images/alipay_logo.gif"> </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn">
+                            <a class="submit" href="javascript:void(0);" id="next_button">确认提交支付</a>
+                            <a class="view" href="">查看充值记录</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="information"></div>
+<!-- 页面加载loading -->
+<div id="pageLoading"></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script>
+
+    $('#next_button').on('click',function(){
+        if ($('#payment_code').val() != '') {
+            $('#buy_form').submit();
+        }
+    });
+</script>
+</body>
+</html>

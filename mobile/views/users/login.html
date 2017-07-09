@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-第三方登录</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/register.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">QQ登录</div>        
+            </header>
+            <div class="other-reg-wrapper">
+                <!-- 用户信息展示 -->
+                <div class="user-info">
+                    <img src="/static/mobile/images/avatar.jpg">
+                    <h2>Hi，QQ昵称</h2>
+                    <p>欢迎使用QQ登录<a href="">堆乐族</a></p>
+                </div>
+                <!-- 按钮切换 -->
+                <div class="reg-switch" id="reg_switch">
+                    <div class="btn"></div>
+                    <div class="new-reg curr" id="new-reg-nav">注册新账号</div>
+                    <div class="binding" id="binding-nav">绑定本站账号</div>
+                </div>
+                <!-- 两个表单内容 -->
+                <div class="reg-c">
+                    <div class="reg-c-pannel" id="reg-c-pannel">
+                        <!-- 注册新账号 -->
+                        <div class="reg-c-item new-reg-c">
+                            <form action="" id="new_reg_form">
+                                <dl>
+                                    <dt>手机号码</dt>
+                                    <dd><input type="text" name="user_name" class="inp" id="telphone"></dd>
+                                </dl>
+                                <dl class="vcode">
+                                    <dt>验证码</dt>
+                                    <dd>
+                                        <input type="text" name="vcode" class="inp verifyCode" id="verificateCode">
+                                        <span class="f-r"> <a href="javascript:;" class="getVerifyCode" id="getVcode">获取验证码</a></span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>新的密码</dt>
+                                    <dd><input type="password" name="Pw" class="inp" id="Pw"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>确认密码</dt>
+                                    <dd><input type="password" name="repeatPw" class="inp" id="repeatPw"></dd>
+                                </dl>
+                                <div class="btn"><a href="javascript:void(0);" class="submit" id="new_reg_btn">注册账号</a></div>
+                            </form>
+                        </div>
+                        <!-- 绑定账号 -->
+                        <div class="reg-c-item binding-c">
+                            <form action="" id="binding_form">                            
+                                <dl>
+                                    <dt>账号</dt>
+                                    <dd><input type="text" name="user_name" class="inp" id="user_name"></dd>
+                                </dl>
+                                <dl>
+                                    <dt>密码</dt>
+                                    <dd><input type="password" name="passwod" class="inp" id="passwod"></dd>
+                                </dl>
+                                <div class="btn"><a href="javascript:void(0);" class="submit" id="binding_form_btn">绑定账号</a></div>
+                            </form>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<div id="information"></div>
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    /**************************************点击左右切换开始*/
+    $("#new-reg-nav").on("click",function(){
+        $(this).addClass("curr");
+        $("#binding-nav").removeClass("curr");
+        $("#reg-c-pannel").removeClass("move-l-540");
+        $("#reg_switch").removeClass("switched");
+    });    
+    $("#binding-nav").on("click",function(){
+        $(this).addClass("curr");
+        $("#new-reg-nav").removeClass("curr");
+        $("#reg-c-pannel").addClass("move-l-540");
+        $("#reg_switch").addClass("switched");
+    });
+    /**************************************点击左右切换结束*/
+
+
+
+
+    /**************************************点击【获取验证码】按钮*/
+    var _e = $("#information");
+    var PromptTxT = function(txt){
+        _e.html('<div class="prompt-txt prompt-txt-animate">'+txt+'</div>');
+    }
+    var tel=document.getElementById("telphone").value; 
+    var pattern = /^1\d{10}$/;//正则匹配手机号码
+
+    //验证码倒计时
+    var wait=60;
+    var getVcode_el = $("#getVcode");
+    function time(o) {  
+            if (wait == 0) {        
+                $(o).html("获取验证码");  
+                wait = 60;
+                getVcode_el.removeClass("disabled-click");
+            } else {
+                $(o).html("重新发送(" + wait + ")");  
+                wait--;
+                setTimeout(function() {  
+                    time(o);
+                },1000);
+            }  
+    }
+    //验证码
+    getVcode_el.click(function(){
+        if(pattern.test(tel)){
+            if(!getVcode_el.hasClass("disabled-click")){
+                getVcode_el.addClass("disabled-click"); 
+                time(getVcode_el);      
+                $.ajax({
+                    url:'index.php?act=login&op=register_code',
+                    type:'POST',
+                    dataType:"json",
+                    success: function(msg){
+                        if(msg.status){
+                            PromptTxT(msg.info);
+                        }else{
+                            PromptTxT(msg.info);
+                        }
+                    }
+                });
+            }else{
+                PromptTxT('您点击太频繁了~');
+            }
+        }else{
+            PromptTxT('请输入正确的手机号');
+        }
+            
+    });
+    //绑定事件
+    $('#telphone').bind('input propertychange', function(){
+        tel=document.getElementById("telphone").value;
+    });
+/**************************************点击【获取验证码】按钮*/
+
+
+    /**************************************点击【注册账号】按钮*/
+    $("#new_reg_btn").on("click",function(){
+        if($("#telphone").val() != '' && $("#verificateCode").val() != '' && $("#Pw").val() != '' && $("#repeatPw").val() != ''){
+            if($("#Pw").val() == $("#repeatPw").val()){
+                //ajax提交表单  表单的ID为new_reg_form
+            }else{
+                PromptTxT('两次密码不一样~');
+            }
+        }else{
+            PromptTxT('请把资料填完整~');
+        }
+    });
+
+
+/**************************************点击【绑定账号】按钮*/
+    $("#binding_form_btn").on("click",function(){
+        if($("#user_name").val() != '' && $("#passwod").val() != ''){
+            //ajax提交表单  表单的ID为new_reg_form
+        }else{
+            PromptTxT('请把资料填完整~');
+        }
+    });
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-购物车</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/cart.css">
+</head>
+<body style="background:#f2f2f2;">
+
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="left-content" id="left-content">
+        <div class="close-layer" id="CloseLayer"></div><!-- 触发层 -->
+    </div>
+    <div class="right-content" id="right-content"><!-- 右侧：可放置快捷操作之类的 -->
+        <div class="userinfo">
+            <!-- 未登录状态显示出来 -->
+            <div class="default-statue">
+                <div class="default-img"><img src="/static/mobile/images/avatar.jpg"></div>
+                <div class="login-reg-btn">
+                    <a href="">登录</a>
+                    <a class="reg" href="">注册</a>
+                </div>
+            </div>
+            <!--登陆之后 -->
+            <!-- <div class="having-login">
+                <div class="avatar"><img src="/static/mobile/images/avatar.jpg"></div>
+                <p class="username txt-hidden">dlz1888888888888888</p>
+            </div> -->
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-home"></i>首页</p>
+                    </a>
+                </li>
+                <li class="cart">
+                    <a href="">
+                        <p><i class="iconfont icon-cart"></i>购物车<em>100</em></p>
+                    </a>
+                </li>
+                <li class="message">
+                    <a href="">
+                        <p><i class="iconfont icon-message"></i>我的消息<em>20</em></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-my1"></i>会员中心</p>
+                    </a>
+                </li>
+                <!--登陆之后才显示 -->
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-pullright"></i>退出登录</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1"  id="backHistory"></div>
+            <div class="more-btn iconfont icon-more" id="more-btn"><em></em></div>
+                <div class="header-title">我的购物车</div>
+            </header>
+            <div class="cartContent orderList pt10">
+                <div class="orderItem" id="orderHolder_s_1">
+                    <div class="itemBody">
+                        <div class="cartShop">
+                            <div class="shopAllSelect">
+                                <input type="checkbox" id="allcheckbox-1" class="regular-allcheckbox" />
+                                <label for="allcheckbox-1"></label>
+                            </div>
+                            <img title="店铺名" src="/static/mobile/images/shop-logo.png" />
+                            <span class="shopName">这是个店铺名字</span><span class="cartEdit"><i class="iconfont icon-edit"></i></span>
+                        </div>
+                        <div class="goodsItem">
+                            <ul class="item-content clear">
+                                <li class="td td-chk">
+                                    <div class="td-inner">
+                                        <input type="checkbox" id="checkbox-1" class="regular-checkbox"/>
+                                        <label for="checkbox-1"></label>
+                                    </div>
+                                </li>
+                                <li class="td td-item">
+                                    <div class="td-inner">
+                                        <div class="item-pic f-l">
+                                            <a href=""><img src="/static/mobile/images/g6.jpg"></a>
+                                        </div>
+                                        <div class="item-info f-l">
+                                            <div class="item-info-name">
+                                                <a href=""><h3>商品名称商品名称商品名称商品名称</h3></a>
+                                            </div>
+                                            <div class="item-info-price">
+                                                <p>￥<label>300.00</label><span>X<em class="num" id="num-1">1</em></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="operate">
+                                <div class="amount-wrap f-l">
+                                        <label>数量</label>
+                                        <div class="num-contr">
+                                            <a href="javascript:;" class="minus no-minus f-l">-</a>
+                                            <input class="text-amount itemAmount f-l" type="text" name="ItemAmount" value="1" data-amount="1">
+                                            <a href="javascript:;" class="plus f-l">+</a>
+                                        </div>
+                                </div>
+                                <div class="del f-r">
+                                    <a href="javascript:;" data-oid="1"><i class="iconfont icon-delete1"></i></a>
+                                </div>
+                                <div class="none"><input type="text" name="thisPay" value="300" class="thisPay"></div><!-- 这个是存放每个商品的总价 -->
+                            </div>
+                        </div>
+                        <div class="goodsItem">
+                            <ul class="item-content clear">
+                            <li class="td td-chk">
+                                <div class="td-inner">
+                                    <input type="checkbox" id="checkbox-2" class="regular-checkbox"/>
+                                    <label for="checkbox-2"></label>
+                                </div>
+                            </li>
+                            <li class="td td-item">
+                                <div class="td-inner">
+                                    <div class="item-pic f-l">
+                                        <a href=""><img src="/static/mobile/images/g6.jpg"></a>
+                                    </div>
+                                    <div class="item-info f-l">
+                                        <div class="item-info-name">
+                                            <a href=""><h3>商品名称商品名称商品名称商品名称</h3></a>
+                                        </div>
+                                        <div class="item-info-price">
+                                            <p>￥<label>300.00</label><span>X<em class="num" id="num-2">1</em></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                            <div class="operate">
+                            <div class="amount-wrap f-l">
+                                    <label>数量</label>
+                                    <div class="num-contr">
+                                        <a href="javascript:;" class="minus no-minus f-l">-</a>
+                                        <input class="text-amount itemAmount f-l" type="text" name="ItemAmount" value="1" data-amount="2">
+                                        <a href="javascript:;" class="plus f-l">+</a>
+                                    </div>
+                            </div>
+                            <div class="del f-r">
+                                <a href="javascript:;" data-oid="10000002"><i class="iconfont icon-delete1"></i></a>
+                            </div>
+                            <div class="none"><input type="text" name="thisPay" value="300" class="thisPay"></div><!-- 这个是存放每个商品的总价 -->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderItem" id="orderHolder_s_2">
+                    <div class="itemBody">
+                        <div class="cartShop">
+                            <div class="shopAllSelect">
+                                <input type="checkbox" id="allcheckbox-2" class="regular-allcheckbox" />
+                                <label for="allcheckbox-2"></label>
+                            </div>
+                            <img title="店铺名" src="/static/mobile/images/shop-logo.png"/>
+                            <span class="shopName">这是个店铺名字</span><span class="cartEdit"><i class="iconfont icon-edit"></i></span>
+                        </div>
+                        <div class="goodsItem">
+                            <ul class="item-content clear">
+                            <li class="td td-chk">
+                                <div class="td-inner">
+                                    <input type="checkbox" id="checkbox-3" class="regular-checkbox" />
+                                    <label for="checkbox-3"></label>
+                                </div>
+                            </li>
+                            <li class="td td-item">
+                                <div class="td-inner">
+                                    <div class="item-pic f-l">
+                                        <a href=""><img src="/static/mobile/images/g6.jpg"></a>
+                                    </div>
+                                    <div class="item-info f-l">
+                                        <div class="item-info-name">
+                                            <a href=""><h3>商品名称商品名称商品名称商品名称</h3></a>
+                                        </div>
+                                        <div class="item-info-price">
+                                            <p>￥<label>300.00</label><span>X<em class="num" id="num-3">1</em></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                            <div class="operate">
+                            <div class="amount-wrap f-l">
+                                    <label>数量</label>
+                                    <div class="num-contr">
+                                        <a href="javascript:;" class="minus no-minus f-l">-</a>
+                                        <input class="text-amount itemAmount f-l" type="text" name="ItemAmount" value="1" data-amount="3">
+                                        <a href="javascript:;" class="plus f-l">+</a>
+                                    </div>
+                            </div>
+                            <div class="del f-r">
+                                <a href="javascript:;" data-oid="10000003"><i class="iconfont icon-delete1"></i></a>
+                            </div>
+                            <div class="none"><input type="text" name="thisPay" value="300" class="thisPay"></div><!-- 这个是存放每个商品的总价 -->
+                        </div>
+                        </div>
+                        <div class="goodsItem">
+                            <ul class="item-content clear">
+                            <li class="td td-chk">
+                                <div class="td-inner">
+                                    <input type="checkbox" id="checkbox-4" class="regular-checkbox" />
+                                    <label for="checkbox-4"></label>
+                                </div>
+                            </li>
+                            <li class="td td-item">
+                                <div class="td-inner">
+                                    <div class="item-pic f-l">
+                                        <a href=""><img src="/static/mobile/images/g6.jpg"></a>
+                                    </div>
+                                    <div class="item-info f-l">
+                                        <div class="item-info-name">
+                                            <a href=""><h3>商品名称商品名称商品名称商品名称</h3></a>
+                                        </div>
+                                        <div class="item-info-price">
+                                            <p>￥<label>300.00</label><span>X<em class="num" id="num-4">1</em></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                            <div class="operate">
+                            <div class="amount-wrap f-l">
+                                    <label>数量</label>
+                                    <div class="num-contr">
+                                        <a href="javascript:;" class="minus no-minus f-l">-</a>
+                                        <input class="text-amount itemAmount f-l" type="text" name="ItemAmount" value="1" data-amount="4">
+                                        <a href="javascript:;" class="plus f-l">+</a>
+                                    </div>
+                            </div>
+                            <div class="del f-r">
+                                <a href="javascript:;" data-oid="10000003"><i class="iconfont icon-delete1"></i></a>
+                            </div>
+                            <div class="none"><input type="text" name="thisPay" value="300" class="thisPay"></div><!-- 这个是存放每个商品的总价 -->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderItem" id="orderHolder_s_3">
+                    <div class="itemBody">
+                        <div class="cartShop">
+                            <div class="shopAllSelect">
+                                <input type="checkbox" id="allcheckbox-3" class="regular-allcheckbox" />
+                                <label for="allcheckbox-3"></label>
+                            </div>
+                            <img title="店铺名" src="/static/mobile/images/shop-logo.png"/>
+                            <span class="shopName">这是个店铺名字</span><span class="cartEdit"><i class="iconfont icon-edit"></i></span>
+                        </div>
+                        <div class="goodsItem">
+                            <ul class="item-content clear">
+                            <li class="td td-chk">
+                                <div class="td-inner">
+                                    <input type="checkbox" id="checkbox-5" class="regular-checkbox" />
+                                    <label for="checkbox-5" ></label>
+                                </div>
+                            </li>
+                            <li class="td td-item">
+                                <div class="td-inner">
+                                    <div class="item-pic f-l">
+                                        <a href=""><img src="/static/mobile/images/g6.jpg"></a>
+                                    </div>
+                                    <div class="item-info f-l">
+                                        <div class="item-info-name">
+                                            <a href=""><h3>商品名称商品名称商品名称商品名称</h3></a>
+                                        </div>
+                                        <div class="item-info-price">
+                                            <p>￥<label>300.00</label><span>X<em class="num" id="num-5">1</em></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>                    
+                        </ul>
+                            <div class="operate">
+                            <div class="amount-wrap f-l">
+                                    <label>数量</label>
+                                    <div class="num-contr">
+                                        <a href="javascript:;" class="minus no-minus f-l">-</a>
+                                        <input class="text-amount itemAmount f-l" type="text" name="ItemAmount" value="1" data-amount="5">
+                                        <a href="javascript:;" class="plus f-l">+</a>
+                                    </div>                            
+                            </div>
+                            <div class="del f-r">
+                                <a href="javascript:;" data-oid="10000004"><i class="iconfont icon-delete1"></i></a>
+                            </div>
+                            <div class="none"><input type="text" name="thisPay" value="300" class="thisPay"></div><!-- 这个是存放每个商品的总价 -->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear statistics">
+                <div class="fixed-b-x1 checkAll f-l" id="checkAll" for="SelectAllCbx">
+                    <input type="checkbox" id="SelectAllCbx" class="regular-allcheckbox" />
+                    <label></label>
+                    <span class="f-r">全选</span>
+                </div>       
+                <div class="fixed-b-x2 price-sum f-r">
+                    <p class="allPrice">合计:<label>￥<span id="price">0.00</span></label></p>
+                    <p class="other-info">不包含运费</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="bottom"><a href="">结算</a>s</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script src="/static/mobile/js/cart.js"></script>
+</body>
+</html>

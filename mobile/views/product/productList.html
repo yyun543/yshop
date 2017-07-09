@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-商品列表页</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/productlist.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="left-content" id="left-content"><!-- 左侧：可放置分类、搜索、触发层 -->
+        <div class="close-layer" id="CloseLayer"></div><!-- 触发层 -->
+        <div class="left-content-main">
+            <div class="search-layer">
+                <div class="s-layer-h">
+                    <div class="closeSearch iconfont icon-back1" id="closeSearch"></div>
+                    <h3>搜索</h3>
+                </div>
+                <div class="search-txt pb20">
+                    <form action="">
+                        <div class="search-switch" id="search-switch">
+                            <div class="btn"></div>
+                            <span class="shop curr">商家</span>
+                            <span class="good">商品</span>
+                            <input class="none" type="text" id="search-style">
+                        </div>
+                        <div class="search-val">
+                            <input type="text" id="keyword" name="kw" class="inp">
+                            <button><i class="iconfont icon-search1"></i></button>
+                        </div>
+                    </form>                        
+                </div>
+                <div class="search-select" id="search-select">
+                    <div class="search-unit">
+                        <div class="su-h hot-kw">热门关键词</div>
+                        <div class="su-list">
+                            <ul>
+                                <li>按摩</li>
+                                <li>电影</li>
+                                <li>KTV</li>
+                                <li>螺蛳粉</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search-unit">
+                        <div class="su-h hot-cat">热门分类</div>
+                        <div class="su-list">
+                            <ul>
+                                <li>按摩</li>
+                                <li>电影</li>
+                                <li>KTV</li>
+                                <li>螺蛳粉</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+    <div class="right-content" id="right-content"><!-- 右侧：可放置快捷操作之类的 -->
+        <div class="userinfo">
+            <!-- 未登录状态显示出来 -->
+            <div class="default-statue">
+                <div class="default-img"><img src="/static/mobile/images/avatar.jpg"></div>
+                <div class="login-reg-btn">
+                    <a href="">登录</a>
+                    <a class="reg" href="">注册</a>
+                </div>
+            </div> 
+            <!--登陆之后 -->
+            <!-- <div class="having-login">
+                <div class="avatar"><img src="/static/mobile/images/avatar.jpg"></div>
+                <p class="username txt-hidden">dlz1888888888888888</p>
+            </div> -->
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-home"></i>首页</p>
+                    </a>
+                </li>
+                <li class="cart">
+                    <a href="">
+                        <p><i class="iconfont icon-cart"></i>购物车<em>100</em></p>
+                    </a>
+                </li>
+                <li class="message">
+                    <a href="">
+                        <p><i class="iconfont icon-message"></i>我的消息<em>20</em></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-my1"></i>会员中心</p>
+                    </a>
+                </li>
+                <!--登陆之后才显示 -->
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-pullright"></i>退出登录</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper goodlist">
+            <header class="header-wrap" id="header">
+                <div class="back iconfont icon-back1" id="backHistory">
+                </div>
+                <div class="seach-c f-l"  id="search-btn">
+                    <button id="button" class="input-submit f-r"><i class="iconfont icon-collect"></i></button>
+                </div>
+                <div class="more-btn iconfont icon-more" id="more-btn"><em></em></div>
+            </header>
+            <div class="select-wrap">
+                <div class="select-c" id="selcetGood">
+                    <div class="select-c-x1 f-l">
+                        <ul>
+                            <li class="active"><a href="">综合<span class="iconfont icon-falling"></span></a></li>
+                            <li><a href="">销量<span class="iconfont icon-falling"></span></a></li>
+                            <li><a href="">价格<span class="iconfont icon-defaultsort"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="select-c-x2 f-l">
+                        <label class="f-l" id="filter">筛选</label>
+                        <label class="f-r"><a href="javascript:void(0); "><span class="iconfont icon-list"></span></a></label>
+                    </div>
+                </div>
+            </div>
+            <div class="Level">
+                <div class="productShow">
+                    <ul class="productShowList">
+                        <li class="productShowItem">
+                            <a href="item.html" target="_self"><img class="productImg" data-original="/static/mobile/images/good2.jpg">
+                                <p>
+                                    <label class="productName">包邮台湾进口史瑞克黑糖姜茶320g黑糖姜茶姜汤姜母茶补血舒缓经期</label>
+                                </p>
+                                <p>
+                                    <span class="nowPrice">￥<label>15.90</label></span>
+                                    <del><span class="price-icon">¥</span><span class="font-num">128</span></del>
+                                </p>
+                                <p><span class="ratings">90%好评(207人)</span></p>
+                                <p class="shadow"></p>
+                            </a>
+                        </li>
+                        <li class="productShowItem">
+                            <a href="item.html" target="_self"><img class="productImg" data-original="/static/mobile/images/good2.jpg">
+                                <p>
+                                    <label class="productName">包邮台湾进口史瑞克黑糖姜茶320g</label>
+                                </p>
+                                <p>
+                                    <span class="nowPrice">￥<label>15.90</label></span>
+                                    <del><span class="price-icon">¥</span><span class="font-num">128</span></del>
+                                </p>
+                                <p><span class="ratings">90%好评(207人)</span></p>
+                                <p class="shadow"></p>
+                            </a>
+                        </li>
+                        <li class="productShowItem">
+                            <a href="item.html" target="_self"><img class="productImg" data-original="/static/mobile/images/good2.jpg">
+                                <p>
+                                    <label class="productName">包邮台湾进口史瑞克黑糖姜茶320g</label>
+                                </p>
+                                <p>
+                                    <span class="nowPrice">￥<label>15.90</label></span>
+                                    <del><span class="price-icon">¥</span><span class="font-num">128</span></del>
+                                </p>
+                                <p><span class="ratings">90%好评(207人)</span></p>
+                                <p class="shadow"></p>
+                            </a>
+                        </li>
+                        <li class="productShowItem">
+                            <a href="item.html" target="_self"><img class="productImg" data-original="/static/mobile/images/good2.jpg">
+                                <p>
+                                    <label class="productName">包邮台湾进口史瑞克黑糖姜茶320g</label>
+                                </p>
+                                <p>
+                                    <span class="nowPrice">￥<label>15.90</label></span>
+                                    <del><span class="price-icon">¥</span><span class="font-num">128</span></del>
+                                </p>
+                                <p><span class="ratings">90%好评(207人)</span></p>
+                                <p class="shadow"></p>
+                            </a>
+                        </li>
+                        <li class="productShowItem">
+                            <a href="item.html" target="_self"><img class="productImg" data-original="/static/mobile/images/good2.jpg">
+                                <p>
+                                    <label class="productName">包邮台湾进口史瑞克黑糖姜茶320g黑糖姜茶姜汤姜母茶补血舒缓经期</label>
+                                </p>
+                                <p>
+                                    <span class="nowPrice">￥<label>15.90</label></span>
+                                    <del><span class="price-icon">¥</span><span class="font-num">128</span></del>
+                                </p>
+                                <p><span class="ratings">90%好评(207人)</span></p>
+                                <p class="shadow"></p>
+                            </a>
+                        </li>
+                        <li class="productShowItem">
+                            <a href="item.html" target="_self"><img class="productImg" data-original="/static/mobile/images/good2.jpg">
+                                <p>
+                                    <label class="productName">包邮台湾进口史瑞克黑糖姜茶320g</label>
+                                </p>
+                                <p>
+                                    <span class="nowPrice">￥<label>15.90</label></span>
+                                    <del><span class="price-icon">¥</span><span class="font-num">128</span></del>
+                                </p>
+                                <p><span class="ratings">90%好评(207人)</span></p>
+                                <p class="shadow"></p>
+                            </a>
+                        </li>
+                        <li class="productShowItem">
+                            <a href="item.html" target="_self"><img class="productImg" data-original="/static/mobile/images/good2.jpg">
+                                <p>
+                                    <label class="productName">包邮台湾进口史瑞克黑糖姜茶320g</label>
+                                </p>
+                                <p>
+                                    <span class="nowPrice">￥<label>15.90</label></span>
+                                    <del><span class="price-icon">¥</span><span class="font-num">128</span></del>
+                                </p>
+                                <p><span class="ratings">90%好评(207人)</span></p>
+                                <p class="shadow"></p>
+                            </a>
+                        </li>
+                        <li class="productShowItem">
+                            <a href="item.html" target="_self"><img class="productImg" data-original="/static/mobile/images/good2.jpg">
+                                <p>
+                                    <label class="productName">包邮台湾进口史瑞克黑糖姜茶320g</label>
+                                </p>
+                                <p>
+                                    <span class="nowPrice">￥<label>15.90</label></span>
+                                    <del><span class="price-icon">¥</span><span class="font-num">128</span></del>
+                                </p>
+                                <p><span class="ratings">90%好评(207人)</span></p>
+                                <p class="shadow"></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>                
+            <div id="caseMarronFonce"><div id="spinner"></div></div>
+            <!-- 底部 -->
+            <footer class="footer none" id="footer">
+                <img src="/static/mobile/images/f-logo.png">
+                <p class="phone">400-8888-899</p>
+                <p class="addr"><i class="iconfont icon-locationfill"></i>桂林市七星区国家高新区信息产业园8-3 号</p>
+                <p class="copyright">© 2015 桂林堆乐族网络科技有限公司 桂ICP备09001975号-3</p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+
+        
+
+
+<div class="gototop iconfont icon-backtop" id="gototop"><!-- 回顶 --></div>
+<div class="gotocart-link" id="gotocart-link"><a href="cart.html" ><i class="icon-cart iconfont"></i><b></b></a></div>
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/jquery.lazyload.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script src="/static/mobile/js/productlist.js"></script>
+</body>
+</html>

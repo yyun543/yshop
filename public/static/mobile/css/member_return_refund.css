@@ -1,0 +1,56 @@
+/*退款及退货页面--->菜单*/
+.re-nav{width: 440px;height: 50px;padding: 5px;margin: 20px auto;border-radius: 30px;background: #ff8000;}
+.re-nav ul li{float: left;}
+.re-nav ul li a{display: inline-block;width: 220px;height: 50px;border-radius: 25px;text-align: center;line-height: 50px;font-size: 30px;color: #fff;}
+.re-nav ul li.actived a{background: #fff;color: #ff8000;}
+
+/*退款及退货页面--->列表*/
+.re-list .re-item{height: 222px;margin-top: 10px;background: #fff;color: #666;font-size: 24px;}
+.re-list .re-item .re-item-h{height: 60px;padding: 0 20px;line-height: 60px;border-bottom: 1px solid #e5e5e5;}
+.re-list .re-item .re-item-h span i{font-size: 36px;}
+.re-list .re-item .re-item-m{height: 60px;padding: 20px;border-bottom: 1px solid #e5e5e5;}
+.re-list .re-item .re-item-m a{color: #666;}
+.re-list .re-item .re-item-m ul li.g-img img{width: 60px;height: 60px;margin-right: 10px;}
+.re-list .re-item .re-item-m ul li.g-name p{width: 440px;padding-left: 10px;line-height: 30px;text-overflow:ellipsis;white-space: nowrap;overflow: hidden;}
+.re-list .re-item .re-item-m ul li.g-name p.num{color: #999;}
+.re-list .re-item .re-item-m ul li.dot i{line-height: 60px;font-size: 36px;color: #999;}
+.re-list .re-item .re-item-m ul li.f-r i{font-size: 36px;line-height: 60px;}
+.re-list .re-item .re-item-b{padding: 0 20px;height: 60px;line-height: 60px;vertical-align:middle;}
+.re-list .re-item .re-item-b span.status-done{color: #ff8000;}
+.re-list .re-item .re-item-b span.status-ing{color: #3d8edd;}
+.re-list .re-item .re-item-b span i{font-size: 36px;margin-right: 5px;}
+.re-list .re-item .re-item-b span.money em{color: #ff8000;font-size: 30px;}
+
+/*退款及退货详情页面*/
+/*退款及退货详情页面--->退货步骤*/
+.return-step,.refund-step{position: relative;height: 155px;padding-top: 30px;color: #999;}
+.return-step ul,.refund-step ul{position: relative;z-index: 5;}
+.return-step ul li,.refund-step ul li{float: left;width: 100px;text-align: center;}
+.return-step ul li div.circle,.refund-step ul li div.circle{width: 70px;height: 70px;border-radius: 50%;border:10px solid #E9E9E9;margin: 5px;text-align: center;line-height: 70px;font-size: 30px;background: #DCDCDC;color: #fff;}
+.return-step ul li p,.refund-step ul li p{line-height: 40px;margin-top: 10px;}
+.return-step ul li.step1,.return-step ul li.step4{margin:0 20px;}
+.return-step ul li.step2,.return-step ul li.step3{margin:0 40px 0;}
+.return-step ul li.curr div.circle,.refund-step ul li.curr div.circle{background: #FFBD11;}
+.return-step ul li.curr p,.refund-step ul li.curr p{color: #FFBD11;}
+.return-step .line{position: absolute;top: 75px;left: 50px;z-index: 2;width: 540px;height: 10px;background: #E9E9E9;}
+/*退款及退货详情页面--->退款步骤*/
+.refund-step ul li.step1,.refund-step ul li.step3{margin: 0 40px;}
+.refund-step ul li.step2{margin: 0 90px;}
+.refund-step .line{position: absolute;top: 75px;left: 100px;z-index: 2;width: 440px;height: 10px;background: #E9E9E9;}
+
+
+
+.return-refund-info{background: #fff;}
+.return-refund-info dl{height: 80px;line-height: 80px;border-bottom: 1px solid #e5e5e5;}
+.return-refund-info dl dt{float: left;width: 140px;text-align: right;margin-right: 10px;}
+.return-refund-info dl dd{display: inline-block;color: #999;}
+.return-refund-info div.evidence{position: relative;height: 150px;padding: 20px 0 20px 150px;border-bottom: 1px solid #e5e5e5;}
+.return-refund-info div.evidence span{position: absolute;top: 20px;left: 30px;}
+.return-refund-info div.evidence ul li img{float: left;width: 148px;height: 148px;margin-right: 10px;border-radius: 5px;border:1px dashed #e5e5e5;}
+.return-refund-info dl dd span.status-done{color: #ff8000;}
+.return-refund-info dl dd span.status-ing{color: #999;}
+
+
+
+
+

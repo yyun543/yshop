@@ -1,0 +1,93 @@
+.btn-i{ position:absolute; top:14px; right:40px; width:50px; height:50px; line-height:50px; vertical-align:middle; border-radius:100%;  color:#FF8000; background-color:#FFF; font-style:italic; font-size:46px;}
+
+.Privilege{ width:640px; font-size:25px;}
+.Privilege ul li{ width:620px; height:350px; margin:10px 10px 14px 10px}
+.Privilege ul li a{ width:620px; height:350px;  display:block}
+.Privilege ul li a .box{ width:620px; height:350px ;}
+.Privilege ul li a .box .box_top{ width:620px; height:200px;background:url(../images/privilegeCard_bj2.png) left bottom no-repeat #6dcff6;border-radius:10px 10px 0 0;}
+.Privilege ul li a .box .box_top .top_l{ width:100px; height:100px; float:left; background:url(../images/privilegeCard.png) 12px 15px no-repeat}
+.Privilege ul li a .box .box_top .top_r{ width:490px; height:165px; float:right; padding:15px 30px 20px 0px; background:url(../images/privilegeCard.png) 69px -128px no-repeat}
+.Privilege ul li a .box .box_top .top_r h3{ width:490px; height:60px; line-height:60px; font-size:36px; color:#FFF; margin-bottom:10px }
+.Privilege ul li a .box .box_top .top_r p{ width:480px; font-size:30px; line-height:40px;color:#448ccb }
+
+.Privilege ul li a .box .box_bottom{ width:620px; height:150px; background:#FFF;box-shadow: 0 5px #aeaeae; border-radius:0 0 10px 10px;}
+.Privilege ul li a .box .box_bottom .bottom_l{ width:439px; height:150px; float:left; }
+.Privilege ul li a .box .box_bottom .bottom_l .bottom_l_box{ width:409px; height:100px; margin:25px }
+.Privilege ul li a .box .box_bottom .bottom_l .bottom_l_box p{ width:400px; height:50px; line-height:50px; color:#666; font-size:24px}
+.Privilege ul li a .box .box_bottom .bottom_l .bottom_l_box p span{ width:50px; height:50px; display:inline-block; float:left}
+.Privilege ul li a .box .box_bottom .bottom_l .bottom_l_box p .sp1{ background:url(../images/privilegeCard.png) 0px -85px no-repeat; }
+.Privilege ul li a .box .box_bottom .bottom_l .bottom_l_box p .sp2{ background:url(../images/privilegeCard.png) -96px -85px no-repeat; }
+.Privilege ul li a .box .box_bottom .bottom_l .bottom_l_box p font{ width:340px; height:50px; display:inline-block; float:left}
+.Privilege ul li a .box .box_bottom .bottom_r{ width:180px; height:150px; float:right; }
+.Privilege ul li a .box .box_bottom .bottom_r p{ width:140px; height:72px; display:block;font-size:30px; color:#ff3333;border-left:1px solid #f1f1f1; margin:40px 0px 20px 10px; padding-left:10px}
+.Privilege ul li a .box .box_bottom .bottom_r p span{ font-size:60px;}
+
+/*第二个特权卡*/
+.Privilege ul li a .box .box_top2{ width:620px; height:200px;background:url(../images/privilegeCard_bj2.png) left bottom no-repeat #f26522;border-radius:10px 10px 0 0;}
+.Privilege ul li a .box .box_top2 .top2_l{ width:100px; height:100px; float:left; background:url(../images/privilegeCard.png) -79px 15px no-repeat}
+.Privilege ul li a .box .box_top2 .top2_r{ width:490px; height:165px; float:right; padding:15px 30px 20px 0px; background:url(../images/privilegeCard.png) 69px -372px no-repeat}
+.Privilege ul li a .box .box_top2 .top2_r h3{ width:490px; height:60px; line-height:60px; font-size:36px; color:#FFF; margin-bottom:10px }
+.Privilege ul li a .box .box_top2 .top2_r p{ width:480px; font-size:30px; line-height:40px;color:#ff9933 }
+
+
+.order_menu{ width:640px; height:80px; background:#fff}
+.order_menu ul li{ height:80px; line-height:80px; float:left; width:128px}
+.order_menu ul li a{  width:128px;height:76px; display:inline-block; text-align:center; font-size:26px;}
+.order_menu ul li.hover a{ border-bottom:4px solid #ff8000; color:#ff8000}
+
+
+
+/*特权卡详情页*/
+.Privilege_item{ width:640px;  }
+.Privilege_item .Privilege_item_box{width:590px; height:80px;line-height:80px;background:#FFF;padding:0px 25px; border-bottom:1px solid #f5f5f5; }
+.Privilege_item .Privilege_item_box:active{background: #f9f9f9;}
+.Privilege_item .Privilege_item_box a{width:590px; height:80px; display:block}
+.Privilege_item .Privilege_item_box a .span1{ width:120px; height:80px; float:left; font-size:24px; color:#333}
+.Privilege_item .Privilege_item_box a .span2{ width:200px; height:80px; float:right; font-size:22px; color:#999; text-align:right; padding-right:5px}
+.Privilege_item .Privilege_item_box a .span3{ float:right; font-size:24px;color:#a6a4a4; text-align:right;transition: all 0.3s ease-in-out;}
+.curr .Privilege_item_box a .span3{-webkit-transform: rotate(90deg);}
+.Privilege_item .span4{ width:105px; height:80px; float:right; }
+.Privilege_item .Privilege_item_box a .span4{ width:350px; height:80px; float:left; font-size:40px; color:#ea8010}
+.Privilege_item .span4 .bdiv{ width:104px; height:53px; background:#ff6633; margin-top:15px;border-radius: 50px; padding:2px 0px 0px 2px}
+.Privilege_item .span4 .bdiv .sdiv{ width:51px; height:51px; background:#fff;border-radius: 100px; float:left }
+.Privilege_item .span4 .bdiv2{ width:104px; height:53px; background:#ff6633; margin-top:15px;border-radius: 50px; padding:2px 2px 0px 0px}
+.Privilege_item .span4 .bdiv2 .sdiv2{ width:51px; height:51px; background:#fff;border-radius: 100px; float:right }
+
+/*拥有特权展开内容*/
+.Privilege_item .Privilege_content{height: 0;width:640px;overflow: hidden;transition: all 0.3s ease-in-out;}
+.curr .Privilege_content{height: 243px;}
+.Privilege_item .Privilege_content ul li{ width:565px; height:80px; line-height:80px; padding:0px 25px 0px 50px; ;border-bottom:1px solid #f5f5f5; font-size:24px; background:url(../images/privilegeCard_item_img2.png) no-repeat 27px 55% #FFF}
+
+
+/*购买须知展开内容*/
+.Privilege_item .buy_content{height: 0;padding:0 25px;overflow: hidden;transition: all 0.3s ease-in-out;}
+.curr .buy_content{ width:590px;height: 150px;padding:15px 25px;}
+.Privilege_item .buy_content ul li{ width:585px; height:50px; line-height:50px;  font-size:24px; padding-left:5px}
+
+/*购买属性漂浮*/
+.order2{ width:640px;background: #fff;transition: all 0.3s ease-in-out; margin:20px 0 150px 0;}
+.animate-to-show{bottom: 90px !important;}
+.order_item{ width:640px;}
+.order_item .order_item_box{width:590px;padding:0px 25px;  height:80px;line-height:80px;background:#FFF; border-bottom:1px solid #f5f5f5; }
+.order_item .order_item_box a{width:590px; height:80px; display:block}
+.order_item .order_item_box .span1{ width:120px; height:80px; float:left; font-size:24px; color:#333}
+.order_item .order_item_box .span2{  float:right; font-size:24px;color:#a6a4a4; text-align:right; }
+.order_item_content{height: 0;padding:0 25px 0 25px ; overflow: hidden;transition: all 0.3s ease-in-out;}
+.pay-style .order_item_content{height: 205px;width:590px; padding:10px 25px 15px 25px ; background:#f1f1f1}
+.order_item_content ul li{ width:585px; height:60px; line-height:60px; font-size:24px; padding-left:5px}
+.order_item_content ul li span{ font-size:24px;  margin-right:10px}
+.order_item_content ul li a{ border-bottom:1px solid #e6e4e4; display:inline-block; width:530px; font-size:24px}
+.order_item .order_item_box .span3{  float:right; overflow:hidden; border:1px solid #e2e0e0;border-radius:5px; width:150; height:49px; margin:15px 0px;}
+.order_item .order_item_box .span3 a{ width:50px; height:50px; display:inline-block; font-size:18px;  text-align:center; line-height:50px; color:#666}
+.order_item .order_item_box .span3 .num{ float:left; width:47px; height:50px; line-height:50px; display:inline-block; text-align:center; color:#666; font-size:24px}
+.order_item .order_item_box .span4{  float:left; width:400px; }
+.order_item .order_item_box .span4 input{width:400px; height:40px; border:none; font-size:24px;outline:none;}
+
+/*特权卡详情页底部固定条*/
+.orde_bottom{ width:620px; height:90px; color:#FFF; position:fixed; bottom:0; left:0;  padding:0px 0px 0px 20px;background: rgba(0,0,0,0.8);}
+.orde_bottom .zg{ float:left; width:200px; height:80px; padding-top:10px}
+.orde_bottom .zg .font1{font-size:24px; color:#fff;   }
+.orde_bottom .zg .font2{font-size:32px; color:#F00; }
+
+.orde_bottom .butn a{display: block;float:right; width:220px; height:90px;  line-height:90px; text-align:center;font-size:30px;  color:#FFF;background:#ff8000;}
+.orde_bottom .butn a:active{background: #F7480E;}

@@ -1,0 +1,104 @@
+
+/************************************店铺介绍*/
+.shopDetail-wrap .sdHead{
+    background-color: #ffffff;
+    width: 640px;
+    height: 210px;
+}
+.shopDetail-wrap .sdHead .sdLogo{
+   height: 210px;
+
+}
+.shopDetail-wrap .sdHead .sdLogo img{
+    width: 150px;
+    height: 150px;
+   padding: 30px 20px 30px 30px;
+
+}
+.shopDetail-wrap .sdHead .sdContent{
+
+    height: 210px;
+}
+.shopDetail-wrap .sdHead .sdContent h3{
+    font-weight: normal;
+    font-size: 28px;
+   line-height: 40px;
+    padding-top: 25px;
+}
+.shopDetail-wrap .sdHead .sdContent .main-cat{
+    font-size: 22px;
+    color: #666666;
+}
+.shopDetail-wrap .sdHead .sdContent a{
+    text-align: center;
+    display: block;
+    width: 175px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #FF8000;
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 60px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+.num-sale-valuation{
+    background-color: #ffffff;
+    height: 120px;
+    width: 100%;
+}
+.num-sale-valuation hr{
+    margin-top: 30px;
+    margin-left: 65px;
+}
+.num-sale-valuation div{
+    float: left;
+    padding-left: 65px;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+}
+.num-sale-valuation div p{
+    font-size: 22px;
+    color: #999;
+    padding-top: 10px;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+.num-sale-valuation div span{
+    color: #FF8000;
+}
+.num-sale-valuation div .num{
+    font-size: 36px;
+}
+.num-sale-valuation div .word{
+    font-size: 20px;
+    padding-left: 5px;
+}
+.infoDetail{
+    background-color: #ffffff;
+    width: 100%;
+}
+.infoDetail p{
+    color: #999999;
+    font-size: 24px;
+    display: block;
+    text-align: left;
+    padding-left: 30px;
+    line-height: 80px;
+    border-bottom: 1px solid #F2F2F2;
+}
+.infoDetail p span{
+    color: #333333;
+    font-size: 26px;
+}
+.detailPic{
+    background-color: #ffffff;
+    height: 170px;
+    width: 100%;
+}
+.detailPic img{
+    padding-left: 10px;
+    width: 130px;
+    height: 130px;
+}

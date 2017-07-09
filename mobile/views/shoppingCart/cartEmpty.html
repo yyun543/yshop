@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-购物车</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/empty.css">
+</head>
+<body style="background:#f2f2f2;">
+
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="left-content" id="left-content">
+        <div class="close-layer" id="CloseLayer"></div><!-- 触发层 -->
+    </div>
+    <div class="right-content" id="right-content"><!-- 右侧：可放置快捷操作之类的 -->
+        <div class="userinfo">
+            <!-- 未登录状态显示出来 -->
+            <div class="default-statue">
+                <div class="default-img"><img src="/static/mobile/images/avatar.jpg"></div>
+                <div class="login-reg-btn">
+                    <a href="">登录</a>
+                    <a class="reg" href="">注册</a>
+                </div>
+            </div> 
+            <!--登陆之后 -->
+            <!-- <div class="having-login">
+                <div class="avatar"><img src="./static/mobile/images/avatar.jpg"></div>
+                <p class="username txt-hidden">dlz1888888888888888</p>
+            </div> -->
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-home"></i>首页</p>
+                    </a>
+                </li>
+                <li class="cart">
+                    <a href="">
+                        <p><i class="iconfont icon-cart"></i>购物车<em>100</em></p>
+                    </a>
+                </li>
+                <li class="message">
+                    <a href="">
+                        <p><i class="iconfont icon-message"></i>我的消息<em>20</em></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-my1"></i>会员中心</p>
+                    </a>
+                </li>
+                <!--登陆之后才显示 -->
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-pullright"></i>退出登录</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1"  id="backHistory"></div>
+            <div class="more-btn iconfont icon-more" id="more-btn"><em></em></div>
+                <div class="header-title">我的购物车</div>        
+            </header>            
+            <div class="empty_box">
+                 <div class="empty_top">
+                   <i class="iconfont icon-cart"></i>
+                 </div>
+                 <div class="empty_bottom">
+                     <h2 class="mb20">您的购物车还没有商品！去逛逛吧！</h2>
+                      <a class="empty-orenge-btn" href="index.php" style="display:inline-block;margin-left:60px;">去逛逛</a>
+                      <a class="empty-blue-btn" href="index.php?act=member_order&op=index" style="display:inline-block;margin-left:55px;">查看我的订单</a>
+                </div>                
+            </div>
+    </div>
+</div>
+
+        
+
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+</body>
+</html>

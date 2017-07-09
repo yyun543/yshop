@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-我的订单</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/order-confirm.css">
+    <script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper">
+            <header class="header noborder">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">我的订单</div>        
+            </header>           
+            <div class="order-wrapper">
+
+              <!-- 订单的收货地址 -->
+              <div class="order-main" id="order_main">
+                <div class="order-addr">
+                  <div class="iconfont icon-location"></div>
+                  <div class="user-info">
+                    <p class="mb10">
+                      <span class="name">收货人：李家公子</span>
+                      <span class="tel f-r">13612345678</span>
+                    </p>
+                    <div class="address">地址：广西 桂林 七星区 桂林市高新区国家信息产业园 8-3号办公楼</div>
+                  </div>
+                  <div class="view-more-info iconfont icon-right" id="view_more_info"></div>
+                </div>
+              </div>
+
+              <!-- 详细信息 -->
+              <div class="information-detail" id="info_detail">
+                <h3 class="i-d-title"><div class="iconfont icon-back1" id="close_info_detail"></div>详细信息</h3>
+                <div class="information-detail-c">
+                  <!-- 地址开始 -->
+
+
+                  <!-- 支付方式开始 -->
+
+
+                  <!-- 发票开始 -->
+                  
+
+
+                </div>
+              </div>
+
+
+              <!-- 订单列表信息 -->
+              <div class="order-list mt10">
+                <!-- 每个店铺订单 -->
+                <div class="order-item">
+                  <!-- 每个店铺信息 -->
+                  <div class="shop-info">
+                    <div class="name">
+                      <a href=""><i class="iconfont icon-shop"></i>店铺名称</a>
+                      <div class="shop-activity" id="shop_activity">
+                        <label>免</label>
+                        <label>满</label>
+                        <label>送</label>
+                      </div>
+                    </div>
+                    <!-- 每个店铺活动详情 -->
+                    <div class="shop-info-detail">
+                      <p><span>满20免运费</span><span>满100减20</span><span>有赠品</span></p>
+                    </div>
+                  </div>
+                  <!-- 商品列表 -->
+                  <div class="o-g-list">
+                    <ul>
+                      <li>
+                        <div class="good-img">
+                          <a href=""><img src="/static/mobile/images/c-5.jpg"></a>
+                        </div>
+                        <div class="good-name">
+                          <h4 class="txt-hidden"><a href="">商品名称</a></h4>
+                          <p class="txt-hidden"><span class="xianshi">满<strong>4</strong>件，单价直降<em>￥15.00</em></span></p>
+                        </div>
+                        <div class="good-number">
+                          <p class="price">￥1144.00</p>
+                          <p class="num">X1</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="good-img">
+                          <a href=""><img src="/static/mobile/images/c-5.jpg"></a>
+                        </div>
+                        <div class="good-name">
+                          <h4><a href="">商品名称</a></h4>
+                          <p><span class="xianshi">抢购</span></p>
+                        </div>
+                        <div class="good-number">
+                          <p class="price">￥1144.00</p>
+                          <p class="num">X1</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- 留言 -->
+                  <div class="your-message">
+                    <textarea  name="pay_message[<?php echo $store_id;?>]" class="ncc-msg-textarea" placeholder="留言[选填]"  maxlength="150"></textarea>
+                  </div>
+                  <!-- 每个店铺的计算 -->
+                  <div class="shop-account">
+                    <dl>
+                      <dt>运费：</dt>
+                      <dd><em id="">0</em>元</dd>
+                    </dl>
+                    <dl>
+                      <dt>商品金额：</dt>
+                      <dd><em id="">278.00</em>元</dd>
+                    </dl>
+                    <!-- 满就送 -->
+                    <dl class="mansong">
+                      <dt>满即送-满100减20 送<a href="">赠品</a></dt>
+                      <dd><em id="">-20.00</em>元</dd>
+                    </dl>
+                    <!-- 代金券 -->
+                    <dl class="voucher">
+                      <dt> 
+                        <select nctype="voucher" name="voucher[2]">
+                          <option value="|2|0.00">选择代金券</option>
+                          <option value="2|2|5">面额5元 有效期至 2015-12-31</option>
+                          <option value="3|2|10">面额10元 有效期至 2015-12-31</option>
+                        </select>
+                      </dt>
+                      <dd><em id="">-0.00</em>元</dd>
+                    </dl>
+                    <!-- 本店合计 -->
+                    <dl class="total mt10">
+                      <dt>本店合计：</dt>
+                      <dd><em id="" nc_type="eachStoreTotal">250.00</em>元</dd>
+                    </dl>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id="information"></div>
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/common.js"></script>
+<script src="/static/mobile/js/order.js"></script>
+</body>
+</html>

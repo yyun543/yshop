@@ -1,0 +1,53 @@
+<!-- 侧边导航栏 -->
+<div class="left-sidebar">
+    <!-- 用户信息 -->
+    <div class="tpl-sidebar-user-panel">
+        <div class="tpl-user-panel-slide-toggleable">
+            <div class="tpl-user-panel-profile-picture">
+                <img src="{{ user_data.avatar }}" alt="">
+            </div>
+                    <span class="user-panel-logged-in-text">
+              <i class="am-icon-circle-o am-text-success tpl-user-panel-status-icon"></i>
+              {{ user_data.uname }}
+          </span>
+            <a href="javascript:;" class="tpl-user-panel-action-link"> <span class="am-icon-pencil"></span> 账号设置</a>
+        </div>
+    </div>
+
+    <!-- 菜单 -->
+    <ul class="sidebar-nav">
+
+        <li class="sidebar-nav-heading">管理中心<span class="sidebar-nav-heading-info"> 功能列表</span></li>
+
+        {% for list in menu %}
+        <li class="sidebar-nav-link">
+            {% if list.children is empty %}
+            <a href="javascript:;" class="sidebar-nav-sub-title">
+                <i class="{{ list.icon }} sidebar-nav-link-logo"></i> {{ list.name }}
+            </a>
+            {% else %}
+            <a href="javascript:;" class="sidebar-nav-sub-title">
+                <i class="{{ list.icon }} sidebar-nav-link-logo"></i> {{ list.name }}
+                <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
+            </a>
+            <ul class="sidebar-nav sidebar-nav-sub">
+                {% for list_c in list.children %}
+                <li class="sidebar-nav-link">
+                    <a href="/{{ list_c.controller }}/{{ list_c.action }}">
+                        <span class="am-icon-angle-right sidebar-nav-link-logo"></span> {{ list_c.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+        <li class="sidebar-nav-link">
+            <a href="/login/logout">
+                <i class="am-icon-key sidebar-nav-link-logo"></i> 退出
+            </a>
+        </li>
+
+
+    </ul>
+</div>

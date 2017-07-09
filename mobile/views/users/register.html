@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-注册</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/register.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">注册</div>        
+            </header>
+            <div class="reg-step">
+                <div class="line"></div>
+                <div class="stepList">
+                    <ul><!-- 说明：进行到哪一步就相应添加类名《curr》 -->
+                        <li class="step1 curr">
+                            <div class="circle">1</div>
+                            <p>验证手机</p>
+                        </li>
+                        <li class="step2">
+                            <div class="circle">2</div>
+                            <p>注册成功</p>
+                        </li>
+                        <li class="step3">
+                            <div class="circle">3</div>
+                            <p>完善信息</p>
+                        </li>
+                    </ul>
+                 </div>
+            </div>
+            <div class="register-content1">
+                <div class="register-frame mt20">
+                    <dl>
+                        <dt><label class="user">手机号码</label></dt>
+                        <dd><input type="text" name="username" id="username" class="username" value="" maxlength="32" placeholder="请输入手机号"></dd>
+                    </dl>                
+                    <dl>
+                        <dt><label class="password">验证码</label></dt>
+                        <dd>
+                            <input type="text" name="verifyCode" id="verifyCode" class="verifyCode" value="" maxlength="32" placeholder="输入验证码">
+                            <span class="f-r"><button class="getVerifyCode" id="getVerifyCode">获取验证码</button></span>
+                        </dd>
+                    </dl>
+                </div>     
+            </div>
+            <div class="btn ml20 mb20">
+                <button type="submit" class="submit" id="SubmitStatic">注  册</button>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<div id="information"></div>
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    var _e = $("#information");
+_e.html('<div class="prompt-txt prompt-txt-animate"><p>注册成功~</p></div>');
+</script>
+<script type="text/javascript">
+    /*原本想封装方法的，思路不对
+    function PromptTxT(txt){
+        var el = $('<div id="prompt_txt"></div>');
+        $("body").append(e);  
+        var e = $("#prompt_txt");
+        e.html('<div class="prompt-txt prompt-txt-animate">'+txt+'</div>');
+    }
+PromptTxT('注册成功~');
+$("#SubmitStatic").on("click",function(){
+    var _txt = 'hahah~';
+    PromptTxT('<div class="dlz-wrapper"id="dlz-wrapper"><div class="main"><!--页面主要内容展示--><div class="wrapper"><header class="header"><div class="back-btn iconfont icon-back1"id="backHistory"></div><div class="header-title">注册</div></header><div class="reg-step"><div class="line"></div><div class="stepList"><ul><!--说明：进行到哪一步就相应添加类名《curr》--><li class="step1 curr"><div class="circle">1</div><p>验证手机</p></li><li class="step2"><div class="circle">2</div><p>注册成功</p></li><li class="step3"><div class="circle">3</div><p>完善信息</p></li></ul></div></div><div class="register-content1"><div class="register-frame mt20"><dl><dt><label class="user"for="username">手机号码</label></dt><dd><input type="text"name="username"id="username"class="username"value=""maxlength="32"placeholder="请输入手机号"></dd></dl><dl><dt><label class="password"for="verifyCode">验证码</label></dt><dd><input type="text"name="verifyCode"id="verifyCode"class="verifyCode"value=""maxlength="32"placeholder="输入验证码"><span class="f-r"><button class="getVerifyCode"id="getVerifyCode">获取验证码</button></span></dd></dl></div></div><div class="btn ml20 mb20"><button type="submit"class="submit"id="SubmitStatic">注册</button></div></div></div></div>');
+})*/
+</script>
+</body>
+</html>

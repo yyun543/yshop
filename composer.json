@@ -1,0 +1,44 @@
+{
+  "name": "yyun543/yphp",
+  "type": "framework",
+  "description": "YPHP Framework",
+  "keywords": [
+    "PHP framework"
+  ],
+  "homepage": "http://yphp.taovq.com",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.6.0",
+    "filp/whoops": "2.1.2",
+    "monolog/monolog": "*",
+    "catfan/medoo": "v1.1.3",
+    "twig/twig": "~1.0",
+    "symfony/var-dumper": "^3.2"
+  },
+  "autoload": {
+        "files": [
+            "core/init.php"
+        ],
+        "psr-4": {
+            "app\\": "app/",
+            "admin\\": "admin/",
+            "mobile\\": "mobile/"
+        },
+        "classmap": ["common/"]
+  },
+  "authors": [
+    {
+      "name": "BugLi",
+      "email": "263273742@qq.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    },
+    {
+      "packagist": false
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-订单详情</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/order.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper register">
+          <header class="header">
+              <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+              <div class="header-title">我的订单</div>        
+          </header>
+      </div>
+      <!--顶部选项-->
+       <div class="order_menu">
+         <ul>
+           <li class="hover"><a href="javascript:;">全部</a></li>
+           <li><a href="javascript:;">待付款</a></li>
+           <li><a href="javascript:;">待发货</a></li>
+           <li><a href="javascript:;">待收货</a></li>
+           <li><a href="javascript:;">待评价</a></li>
+         </ul>
+       </div>
+      <div class="ordrer-detail">
+          <div class="o-item">
+              <div class="od-title">
+                <span class="iconfont icon-shop od-title-shop"></span>
+                  <span class="o-name">这是个店铺的名字</span>            
+                  <span class="o-status f-r">等待发货</span>
+              </div>
+              <div class="od-id">
+                订单编号：<label>201510191944 </label>         
+              </div>
+              <div class="o-info">
+                <a href="item.html">
+                    <div class="img f-l"><img src="/static/mobile/images/g5.jpg"></div>
+                    <div class="name txt-hidden f-l">EAMEY 绎美 unik3 智能手表EAMEY 绎美 unik3 智能手表EAMEY 绎美 unik3 智能手表</div>
+                </a>          
+              </div>
+            <div class="o-op">
+              <div class="f-r">
+                      <a href="javascript:;">删除订单</a>
+                      <a href="logistics.html">查看物流</a>
+                      <a style="color:#ff9900;" href="">评价</a>
+              </div>          
+            </div>
+          </div>  
+          <div class="o-item o-item2">
+              <div class="od-title">
+                <span class="iconfont icon-shop od-title-shop"></span> 
+                  <span class="o-name">这是个店铺的名字</span>            
+                  <span class="o-status f-r ">等待付款</span>
+            </div>
+            <div class="od-id">
+                订单编号：<label>201510191944 </label>         
+              </div>
+            <div class="o-info">
+                <a href="item.html">
+                    <div class="img f-l"><img src="/static/mobile/images/g5.jpg"></div>
+                    <div class="name txt-hidden f-l">EAMEY 绎美 unik3 智能手表EAMEY 绎美 unik3 智能手表EAMEY 绎美 unik3 智能手表</div>
+                </a>          
+              </div>
+            <div class="o-op">
+              <div class="f-r">
+                      <a href="javascript:;">删除订单</a>
+                      <a href="logistics.html">查看物流</a>
+                      <a style="color:#ff9900;" href="">评价</a>
+              </div>          
+            </div>
+          </div>  
+      </div>
+    </div>
+</div>
+      
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    $(".order_menu ul li").on("click",function(){
+      $(this).addClass("hover").siblings().removeClass("hover");
+    });
+</script>
+</body>
+</html>

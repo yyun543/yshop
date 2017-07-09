@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-我的推广</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/generalized.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">登录</div>        
+            </header>
+            <div class="generalized-wrap">
+                <div class="gw-nav">
+                    <div class="gw-nav-c" id="generalized-nav">
+                        <div class="gw-btn"></div>
+                        <ul>
+                            <li class="active" data-val="1">我的推广</li>
+                            <li data-val="2">推广明细</li>
+                            <li data-val="3">推广结算</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 数据从这里开始 -->
+                <div class="gw-content">
+                    <div class="gw-c-list" id="gw-c-list">
+                        <div class="my-g" id="gw-unit1">
+                            <div class="my-g-c">
+                                <p class="title">我的推广链接</p>
+                                <div class="TheLink">
+                                    <input type="text" id="MyLink">
+                                    <a class="copy-btn f-r" href="javascript:;" id="copy-btn">复制</a>
+                                </div>                    
+                                <div class="qrcode">
+                                    <p>扫二维码，分享推广链接</p>
+                                    <div class="code-area" id="code-area">
+                                        <img src="/static/mobile/images/qrcode.jpg" alt="二维码图片放在这里">
+                                    </div>
+                                </div>
+                            </div>                        
+                            <div class="other-g">
+                                <h3>其他推广方式</h3>
+                                <div class="line"></div>
+                                <div class="other-g-list">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;" id="generalized-weixin">
+                                                <div class="login-icon weixin"><span></span></div>
+                                                <h3>微信推广</h3>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" id="generalized-weibo">
+                                                <div class="login-icon weibo"><span></span></div>
+                                                <h3>新浪推广</h3>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" id="generalized-qq">
+                                                <div class="login-icon qq"><span></span></div>
+                                                <h3>QQ推广</h3>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-detail" id="gw-unit2">
+                            <div class="g-detail-h">
+                                <ul>
+                                    <li class="gd-h-x1">状态</li>
+                                    <li class="gd-h-x2">订单ID</li>
+                                    <li class="gd-h-x3">商品价格</li>
+                                    <li class="gd-h-x4">推广价格</li>
+                                </ul>
+                            </div>
+                            <div class="g-detail-table">
+                                <div class="gd-t-unit complete">
+                                    <ul>
+                                        <li class="td1">&nbsp;</li>
+                                        <li class="td2">ID：<span>123456789</span></li>
+                                        <li class="td3">￥500</li>
+                                        <li class="td4">￥500</li>
+                                    </ul>
+                                    <div class="status">
+                                        <p><span>订单状态</span><span class="span2">已完成</span></p>
+                                        <p class="p2"><span>结算状态</span><span class="span2">已结算</span></p>
+                                    </div>
+                                </div>
+                                <div class="gd-t-unit no-complete">
+                                    <ul>
+                                        <li class="td1">&nbsp;</li>
+                                        <li class="td2">ID：<span>123456789</span></li>
+                                        <li class="td3">￥500</li>
+                                        <li class="td4">￥500</li>
+                                    </ul>
+                                    <div class="status">
+                                        <p><span>订单状态</span><span class="span2">未完成</span></p>
+                                        <p class="p2"><span>结算状态</span><span class="span2">未结算</span></p>
+                                    </div>
+                                </div>
+                                <div class="gd-t-unit complete">
+                                    <ul>
+                                        <li class="td1">&nbsp;</li>
+                                        <li class="td2">ID：<span>123456789</span></li>
+                                        <li class="td3">￥500</li>
+                                        <li class="td4">￥500</li>
+                                    </ul>
+                                </div>
+                                <div class="gd-t-unit complete">
+                                    <ul>
+                                        <li class="td1">&nbsp;</li>
+                                        <li class="td2">ID：<span>123456789</span></li>
+                                        <li class="td3">￥500</li>
+                                        <li class="td4">￥500</li>
+                                    </ul>
+                                </div>
+                                <div class="gd-t-unit complete">
+                                    <ul>
+                                        <li class="td1">&nbsp;</li>
+                                        <li class="td2">ID：<span>123456789</span></li>
+                                        <li class="td3">￥500</li>
+                                        <li class="td4">￥500</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-acount" id="gw-unit3">                    
+                            <div class="g-acount-h">
+                                <ul>
+                                    <li>计算日期</li>
+                                    <li>结算佣金</li>
+                                </ul>
+                            </div>
+                            <div class="g-acount-table">
+                                <div class="ga-t-unit">
+                                    <ul>
+                                        <li>2015-11-13</li>
+                                        <li class="money">￥500</li>
+                                    </ul>
+                                </div>    
+                                <div class="ga-t-unit">
+                                    <ul>
+                                        <li>2015-11-13</li>
+                                        <li class="money">￥500</li>
+                                    </ul>
+                                </div>    
+                                <div class="ga-t-unit">
+                                    <ul>
+                                        <li>2015-11-13</li>
+                                        <li class="money">￥500</li>
+                                    </ul>
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    var winH = $(window).height();
+    $("#generalized-nav li").on("click",function(){
+        var _id = $(this).attr("data-val");
+        $(this).addClass("active").siblings().removeClass("active");
+        GeneralizedNavMove(_id);
+    });
+    var GeneralizedNavMove = function(id){
+        $("#generalized-nav .gw-btn").css("left",200*(id-1)+5);
+        $("#gw-c-list").css("margin-left",-640*(id-1));
+    }
+</script>    
+</body>
+</html>

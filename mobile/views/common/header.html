@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Mobile商城首页</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/index.css">
+</head>
+<body>
+
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="left-content" id="left-content"><!-- 左侧：可放置分类、搜索、触发层 -->
+        <div class="close-layer" id="CloseLayer"></div><!-- 触发层 -->
+        <div class="left-content-main">
+            <div class="search-layer">
+                <div class="s-layer-h">
+                    <div class="closeSearch iconfont icon-back1" id="closeSearch"></div>
+                    <h3>搜索</h3>
+                </div>
+                <div class="search-txt pb20">
+                    <form action="">
+                        <div class="search-switch" id="search-switch">
+                            <div class="btn"></div>
+                            <span class="shop curr">商家</span>
+                            <span class="good">商品</span>
+                            <input class="none" type="text" id="search-style">
+                        </div>
+                        <div class="search-val">
+                            <input type="text" id="keyword" name="kw" class="inp">
+                            <button><i class="iconfont icon-search1"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="search-select" id="search-select">
+                    <!-- <div class="search-unit">
+                        <div class="su-h history">历史搜索</div>
+                        <div class="su-list">
+                            <ul>
+                                <li>按摩</li>
+                                <li>电影</li>
+                                <li>KTV</li>
+                                <li>螺蛳粉</li>
+                                <li>按摩</li>
+                                <li>电影</li>
+                                <li>KTV</li>
+                                <li>螺蛳粉</li>
+                                <li>按摩</li>
+                                <li>电影</li>
+                                <li>KTV</li>
+                                <li>螺蛳粉</li>
+                                <li>按摩</li>
+                                <li>电影</li>
+                                <li>KTV</li>
+                                <li>螺蛳粉</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <div class="search-unit">
+                        <div class="su-h hot-kw">热门关键词</div>
+                        <div class="su-list">
+                            <ul>
+                                <li>按摩</li>
+                                <li>电影</li>
+                                <li>KTV</li>
+                                <li>螺蛳粉</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search-unit">
+                        <div class="su-h hot-cat">热门分类</div>
+                        <div class="su-list">
+                            <ul>
+                                <li>按摩</li>
+                                <li>电影</li>
+                                <li>KTV</li>
+                                <li>螺蛳粉</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-content" id="right-content"><!-- 右侧：可放置快捷操作之类的 -->
+        <div class="userinfo">
+            <!-- 未登录状态显示出来 -->
+            <div class="default-statue">
+                <div class="default-img"><img src="/static/mobile/images/avatar.jpg"></div>
+                <div class="login-reg-btn">
+                    <a href="">登录</a>
+                    <a class="reg" href="">注册</a>
+                </div>
+            </div>
+            <!--登陆之后 -->
+            <!-- <div class="having-login">
+                <div class="avatar"><img src="/static/mobile/images/avatar.jpg"></div>
+                <p class="username txt-hidden">dlz1888888888888888</p>
+            </div> -->
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-home"></i>首页</p>
+                    </a>
+                </li>
+                <li class="cart">
+                    <a href="">
+                        <p><i class="iconfont icon-cart"></i>购物车<em>100</em></p>
+                    </a>
+                </li>
+                <li class="message">
+                    <a href="">
+                        <p><i class="iconfont icon-message"></i>我的消息<em>20</em></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-my1"></i>会员中心</p>
+                    </a>
+                </li>
+                <!--登陆之后才显示 -->
+                <li>
+                    <a href="">
+                        <p><i class="iconfont icon-pullright"></i>退出登录</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>

@@ -1,0 +1,23 @@
+.move-r-640{right: 0 !important;}
+
+
+.allClassify-wrap{position: relative;width: 640px;height: 100%;overflow-y: auto;overflow-x: hidden;}
+.allClassify-wrap .first-cat{position: relative;z-index: 2;width: 640px;background: #fff;}
+.allClassify-wrap .first-cat ul li.first-cat-item{position: relative;height: 99px;padding: 0 50px;line-height: 100px;line-height: 100px;border-bottom: 1px solid #e5e5e5;}
+.allClassify-wrap .first-cat ul li.first-cat-item .dot{position: absolute;top: 43px;left: 19px;width: 12px;height: 12px;border-radius: 6px;background: #ff8000;}
+.allClassify-wrap .first-cat ul li.first-cat-item .arrow{position: absolute;top: 25px;right: 0;width: 50px;height: 50px;line-height: 50px;text-align: center;font-size: 36px;color: #999;}
+.allClassify-wrap .first-cat ul li.first-cat-item h2{width: 520px;font-size: 28px;color: #333;text-overflow:ellipsis;white-space: nowrap;overflow: hidden;}
+
+
+.second-cat-item{position: absolute;top: 0;right: -640px;z-index: 5;width: 640px;overflow: hidden;-webkit-transition: all 0.2s linear;}
+.second-cat-item .close_layer{position: absolute;top: 0;left: 0;z-index: 6;width: 640px;height: 100%;background: rgba(0,0,0,0.5);}
+.second-cat-item .s-cat-item-c{position: absolute;top: 0;right: 0;z-index: 9;width: 440px;height: 100%;background: #fff;overflow: hidden;background: #f2f2f2;color: #666;}
+.second-cat-item .s-cat-item-c .first-cat-name{position: relative;height: 80px;line-height: 80px;padding: 0 90px 0 20px;background: #e5e5e5;}
+.second-cat-item .s-cat-item-c .first-cat-name p{text-overflow:ellipsis;white-space: nowrap;overflow: hidden;}
+.second-cat-item .s-cat-item-c .first-cat-name .close-icon{position: absolute;top: 0;right: 0;height: 80px;width: 80px;line-height: 80px;text-align: center;font-size: 36px;color: #ff8000;}
+.second-cat-item .s-cat-item-c .sec-cat-list{width: 430px;padding-left: 10px;overflow-y: auto;}
+.second-cat-item .s-cat-item-c .sec-cat-list h4{padding-left: 10px;margin: 15px 0;border-left: 5px solid #ff8000;color: #ff8000;font-size: 24px;line-height: 24px;}
+.second-cat-item .s-cat-item-c .sec-cat-list ul li{float: left;margin: 5px 10px 5px 0;}
+.second-cat-item .s-cat-item-c .sec-cat-list ul li a{display: inline-block;width: 185px;height: 80px;padding: 0 10px;text-align: center;line-height: 80px;text-overflow:ellipsis;white-space: nowrap;overflow: hidden;background: #fff;color: #666;font-size: 24px;}
+
+.second-cat-item .s-cat-item-c .sec-cat-list ul li:nth-child(2n){margin-right: 0 !important;}

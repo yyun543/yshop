@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-账户信息</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/account.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">账户信息</div>
+            </header>
+
+            <!--头像-->
+            <div class="account mb10">
+                <div class="account_box" style="height:160px">
+                    <a href="" style="height:160px">
+                        <span class="span1" style="height:160px; line-height:160px">头像</span>
+                        <span class="span3" style="height:160px; line-height:160px"><i class="iconfont icon-right"></i></span>
+                    <span class="span4">
+                         <div class="heard">
+                             <img src="/static/mobile/images/avatar.jpg" style="width:85px; height:85px">
+                         </div>
+                    </span>
+                    </a>
+                </div>
+            </div>
+
+            <!--用户名-->
+            <div class="account" id="user">
+                <div class="account_box">
+                    <a href="javascript:;">
+                        <span class="span1">用户名</span>
+                        <span class="span3"> <i class="iconfont icon-right"></i></span> 
+                    <span class="span2" >
+                        <label for="user" class="lab2"><input type="text" name="user" id="user" placeholder="13557755859"></label>
+                    </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!--昵称-->
+            <div class="account" id="name">
+                <div class="account_box">
+                    <a href="javascript:;">
+                        <span class="span1">昵称</span>
+                        <span class="span3"> <i class="iconfont icon-right"></i></span>       
+                     <span class="span2">
+                        <label for="name" class="lab2"><input type="text" name="name" id="name" placeholder="不再忧伤"></label>
+                    </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!--手机号码-->
+            <div class="account" id="phone">
+                <div class="account_box">
+                    <a href="javascript:;">
+                        <span class="span1">手机号码</span>
+                        <span class="span3"> <i class="iconfont icon-right"></i></span>       
+                    <span class="span2">
+                        <label for="phone" class="lab2"><input type="text" name="phone" id="phone" placeholder="13557755698"></label>
+                    </span>
+                    </a>
+                </div>
+            </div>
+
+            <!--性别-->
+            <div class="account" id="sex">
+                <div class="account_box">
+                    <a href="javascript:;">
+                        <span class="span1">性别</span>
+                        <span class="span3"> <i class="iconfont icon-right"></i></span>
+                        <span class="span2">女</span>
+                    </a>
+                </div>
+                <div class="sex_content">
+                    <span>男</span>
+                    <span class="noborder">女</span>
+                </div>
+            </div>
+
+            <!--出生日期-->
+            <div class="account mb10" id="date">
+                <div class="account_box">
+                    <a href="javascript:;">
+                        <span class="span1">出生日期</span>
+                        <span class="span3"> <i class="iconfont icon-right"></i></span>
+                        <span class="span2">1949年7月4日</span>
+                    </a>
+                </div>
+                <div class="date_content">
+                    <div class="years">
+                        <ul>
+                            <li>2015</li>
+                            <li>2014</li>
+                            <li>2013</li>
+                            <li>2012</li>
+                        </ul>
+                    </div>
+                    <div class="months">
+                        <ul>
+                            <li>一月</li>
+                            <li>二月</li>
+                            <li>三月</li>
+                            <li>四月</li>
+                        </ul>
+                    </div>
+                    <div class="day">
+                        <ul>
+                            <li>01</li>
+                            <li>02</li>
+                            <li>03</li>
+                            <li>04</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--修改密码-->
+            <div class="account" id="password">
+                <div class="account_box">
+                    <a href="javascript:;">
+                        <span class="span1">修改密码</span>
+                        <span class="span3"><i class="iconfont icon-right"></i></span>
+                    </a>
+                </div>
+                <div class="password">
+                    <label class="lab"><span>输入旧密码</span><input type="password" name="password1" id="password1" placeholder="点击输入"></label>
+                    <label class="lab"><span>输入新密码</span><input type="password" name="password2" id="password2" placeholder="点击输入"></label>
+                    <label class="lab"><span>确认新密码</span><input type="password" name="password3" id="password3" placeholder="点击输入"></label>
+                </div>
+            </div>
+
+            <!--底部固定-->
+            <div class="bottom" id="conserve-account"><a href="javascript:;">保存新信息</a></div>
+        </div>
+    </div>
+</div>
+<!-- 提示信息 -->
+<div class="prompt-txt" id="prompt-txt">保存成功</div>
+<!-- 页面加载loading -->
+<div id="pageLoading"></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    //展开收起
+    $("#sex,#date,#password").find(".account_box").on("click",function(){
+        $(this).parent().toggleClass("foldchild");
+    });
+
+    //定位到底部
+    $(".password input").click(function(){$("html,body").animate({scrollTop:$("#password3").offset().top}, 800);});
+
+    //提示信息
+    $("#conserve-account").on("click",function(){
+        $("#prompt-txt").addClass("prompt-animate-down");
+    });
+</script>
+</body>
+</html>

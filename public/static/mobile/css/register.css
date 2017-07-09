@@ -1,0 +1,78 @@
+/*头部*/
+.reg-step{position: relative;height: 150px;width: 640px;margin: 0 auto;}
+.reg-step .line{position: absolute;top: 70px;left: 80px;z-index: 1;width: 460px;height: 10px;background: #e9e9e9;}
+.reg-step .stepList{overflow: hidden;}
+.reg-step .stepList ul li{position: relative;z-index: 5;float: left;display: block;width: 130px;margin: 30px 40px 0 40px;text-align: center;font-size: 26px;}
+.reg-step .stepList ul li .circle{width: 60px;height: 60px;border-radius: 50%;border:15px solid #e9e9e9;text-align: center;line-height: 60px;color: #fff;font-size: 30px;background: #dcdcdc; margin-left:20px;}
+.reg-step .stepList ul li p{margin-top: 10px; color:#999;}
+.reg-step .stepList ul li.curr .circle{background: #fdce54;}
+.reg-step .stepList ul li.curr p{color: #fdce54;}
+/*注册1*/
+.register-content1{margin: 60px 20px 20px 20px;font-size: 24px; background-color:#fff; padding:20px 0;}
+.register-content1 .register-frame dl{margin: 20px 0;}
+.register-content1 .register-frame dl dt{float: left;margin: 15px 10px 0 20px;}
+.register-content1 .register-frame dl dt label{display: block;width: 100px;text-align: right;font-size: 24px;}
+.register-content1 .register-frame dl dd input{width: 402px;height: 44px;padding: 8px;font-size: 24px;color: #1c1c1c;border: 1px solid #e5e5e5;border-radius: 5px;}
+.register-content1 .register-frame dl dd input.verifyCode{width: 220px;}
+.register-content1 .register-frame dl dd input:focus{border-color:#1FAEFF;}
+.register-content1 .register-frame dl dd span.f-r button.getVerifyCode{padding: 15px 20px; margin-right:50px;font-size: 24px;border-radius: 5px;border: 1px solid #e5e5e5;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8), to(#eeeeee));}
+.register-content1 .btn button.confirm{display: block;width: 100%;height: 80px;border-radius: 5px;font-size: 30px; background: #ff8000;color: #FFF;box-shadow: 0 0 3px #ddd;}
+.register-content1 .register-error{/* display: none; */color: #EB4E38;text-align: center;}
+
+.btn .submit{display: block;width:600px;;height: 80px;border-radius: 5px;font-size: 30px; background: #ff8000;color: #FFF;box-shadow: 0 0 3px #ddd;}
+
+
+/*注册2*/
+.register-content2{ width:600px; margin:60px auto 20px; background-color:#FFF; padding:30px 0;}
+.iconCheck{height: 50px;line-height: 50px;vertical-align: middle;font-size: 28px;text-align: center;background-image:url(../images/check.png);background-repeat: no-repeat;background-position: 155px center; color:#ff8000; padding:0px 0 0px 65px;}
+.sendtext{ text-align:center; margin:10px 0;}
+.reSend{ text-align:center;}
+.nonepassw{ color:#00a3d8; font-size:24px;}
+.brn-resend{ width:150px; height:50px;padding: 5px 20px; font-size: 24px;border-radius: 5px;border: 1px solid #e5e5e5;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8), to(#eeeeee)); color:#666;}
+
+.perfect{ width:400px; height:60px; background-color:#ff8000; color:#fff;border-radius: 5px; font-size:24px;}
+.gobrowse{ width:180px; height:60px;border-radius: 5px; margin:20px 0 0 20px; color:#666; font-size:24px;}
+/*注册3*/
+.register-content3{width:600px; margin:60px auto 20px; background-color:#FFF; padding:20px 0;}
+.register-content3 .register-frame dl{margin: 20px 0;}
+.register-content3 .register-frame dl dt{float: left;margin: 15px 10px 10px 10px;}
+.register-content3 .register-frame dl dt label{display: block;width: 150px;text-align: right;font-size: 24px;}
+.register-content3 .register-frame dl dd input{width: 402px;height: 44px;padding: 8px;font-size: 24px;color: #1c1c1c;border: 1px solid #e5e5e5;border-radius: 5px;}
+.register-content3 .register-frame dl dd input.verifyCode{width: 220px;}
+.register-content3 .register-frame dl dd input:focus{border-color:#1FAEFF;}
+.register-content3 .register-frame dl dd span.f-r button.getVerifyCode{padding: 15px 20px; margin-right:50px;font-size: 24px;border-radius: 5px;border: 1px solid #e5e5e5;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8), to(#eeeeee));}
+.register-content3 .btn button.confirm{display: block;width: 100%;height: 80px;border-radius: 5px;font-size: 30px; background: #ff8000;color: #FFF;box-shadow: 0 0 3px #ddd;}
+.sex{width:200px; height:60px;border-radius: 5px; background-color:#FFF; font-size:24px; border:#e5e5e5 1px solid; color:#999;}
+.nv{ margin-left:20px;}
+
+
+
+
+.move-l-540{margin-left: -540px !important;}
+.other-reg-wrapper{width: 540px;margin: 20px;padding: 0 30px; background: #fff;}
+.other-reg-wrapper .user-info{padding: 20px 0;text-align: center;}
+.other-reg-wrapper .user-info img{width: 150px;height: 150px;border-radius: 50%;}
+.other-reg-wrapper .user-info h2{font-size: 32px;font-weight: normal;color: #333;line-height: 46px;}
+.other-reg-wrapper .user-info p{color: #999;line-height: 36px;}
+.other-reg-wrapper .user-info p a{margin-left: 5px;color: #696969;}
+.other-reg-wrapper .reg-switch{position: relative;width: 520px;height: 50px;margin: 0 auto;padding: 5px;border-radius: 30px;background: #ff7f00;}
+.other-reg-wrapper .reg-switch .btn{position: absolute;top: 5px;left: 5px;z-index: 2;width: 260px;height: 50px;border-radius: 25px;background: #fff;-webkit-transition: all 0.2s linear;}
+.other-reg-wrapper .reg-switch .new-reg,
+.other-reg-wrapper .reg-switch .binding{position: relative;z-index: 5;float: left;width: 260px;height: 50px;text-align: center;line-height: 50px;font-size: 24px;color: #fff;-webkit-transition: all 0.2s linear;}
+.other-reg-wrapper .reg-switch .curr{color: #ff8000;}
+.other-reg-wrapper .switched .btn{left: 265px;}
+
+
+.other-reg-wrapper .reg-c{width: 540px;padding: 40px 0;overflow: hidden;}
+.other-reg-wrapper .reg-c .reg-c-pannel{width: 1080px;overflow: hidden;-webkit-transition: all 0.2s linear;}
+.other-reg-wrapper .reg-c .reg-c-item{float: left;width: 540px;}
+.other-reg-wrapper .reg-c .reg-c-item dl{width: 540px;height: 70px;margin-bottom: 20px;}
+.other-reg-wrapper .reg-c .reg-c-item dl dt{float: left;width: 100px;height: 62px;padding-right: 10px;text-align: right;line-height: 62px;color: #333;}
+.other-reg-wrapper .reg-c .reg-c-item dl dd{width: 430px;float: left;}
+.other-reg-wrapper .reg-c .reg-c-item dl dd input.inp{width: 418px;height: 58px;padding: 3px 5px;border:1px solid #e5e5e5;border-radius: 5px;font-size: 24px;}
+.other-reg-wrapper .reg-c .reg-c-item dl.vcode dd input.inp{width: 218px;}
+.other-reg-wrapper .reg-c .reg-c-item dl.vcode dd a.getVerifyCode{display: block;padding: 15px 20px;font-size: 24px;border-radius: 5px;border: 1px solid #e5e5e5;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8), to(#eeeeee));}
+.other-reg-wrapper .reg-c .reg-c-item .btn a.submit{width: 430px;margin-left: 110px;line-height: 80px;text-align: center;}
+
+
+h2.success-txt{height: 40px;margin-top: 200px;line-height: 40px;text-align: center;font-size: 30px;color: #ff8000;font-weight: normal;padding-left: 50px;background: url(../images/check.png) 160px 0 no-repeat;}

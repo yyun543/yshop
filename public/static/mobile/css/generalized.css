@@ -1,0 +1,14 @@
+.generalized-wrap{width: 640px;background: #f2f2f2;overflow: hidden;}
+.generalized-wrap .notices{line-height: 50px;text-align: center;background: #fff;}
+.generalized-wrap .notices span{font-size: 30px;color: #ff8000;}
+.generalized-wrap .g-unit{position: relative;widows: 620px;height: 300px;padding: 15px 10px;margin-top: 20px;background: #fff;}
+.generalized-wrap .g-unit .shop-logo img{width: 70px;height: 70px;}
+.generalized-wrap .g-unit .shop-name{width: 360px;margin-left: 85px;height: 70px;line-height: 70px;font-size: 30px;color: #333;}
+.generalized-wrap .g-unit .shop-info{width:440px;padding-left: 20px;line-height: 40px;font-size: 24px;color: #ff8000;}
+.generalized-wrap .g-unit .shop-info i{font-size: 30px;}
+.generalized-wrap .g-unit p.txt{color: #696969;}
+.generalized-wrap .g-unit p input.the-link{height: 72px;width: 608px;padding: 3px 5px;line-height: 72px;font-size: 24px;color: #333;border-radius: 5px;border:1px solid #e5e5e5;}
+.generalized-wrap .g-unit .qrcode{position: absolute;top: 15px;right: 15px;padding: 10px;border-radius: 5px;background: #e6e6e6;}
+.generalized-wrap .g-unit .qrcode img{width: 140px;height: 140px;}
+
+

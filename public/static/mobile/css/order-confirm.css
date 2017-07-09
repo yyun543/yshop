@@ -1,0 +1,96 @@
+.move-to-r0{right: 0 !important;}
+
+
+
+
+.order-wrapper{position: relative;width: 640px;}
+.order-wrapper h3,.order-wrapper h4{font-weight: normal;}
+.order-wrapper .order-main{position: relative;z-index: 1;width: 640px;}
+.order-wrapper .information-detail{position: absolute;top: -80px;right: -640px;z-index:9;width: 640px;background: #fff;-webkit-transition: all 0.3s linear;}
+.order-wrapper .order-main .order-addr{position: relative;height: 120px;padding: 10px 0;background: #fff;}
+.order-wrapper .order-main .order-addr .icon-location{position: absolute;left: 0;top: 30px;width: 80px;height: 80px;text-align: center;line-height: 80px;font-size: 50px;color: #666;}
+.order-wrapper .order-main .order-addr .user-info{width: 460px;margin-left: 95px;}
+.order-wrapper .order-main .order-addr .user-info p{line-height: 40px;}
+.order-wrapper .order-main .order-addr .user-info .address{height: 70px;line-height: 36px;}
+.order-wrapper .order-main .order-addr .view-more-info{position: absolute;top: 10px;right: 0;height: 120px;width: 80px;padding-right: 10px;line-height: 120px;text-align: right;font-size: 36px;color: #999;}
+
+/* 订单信息 */
+/* 订单信息 --->商家信息*/
+.order-item{width: 640px;margin-top: 10px;background: #fff;}
+.order-item .shop-info{line-height: 50px;}
+.order-item .shop-info .name{position: relative;height: 50px;padding: 0 20px;}
+.order-item .shop-info .name a i{font-size: 30px;margin-right: 5px;}
+.order-item .shop-info .name .shop-activity{position: absolute;top: 0;right: 20px;}
+.order-item .shop-info .name .shop-activity label{padding: 3px 5px;border-radius: 3px;color: #fff;}
+.order-item .shop-info .name .shop-activity label:nth-child(1){background: #ff8000;}
+.order-item .shop-info .name .shop-activity label:nth-child(2){background: #e8554c;}
+.order-item .shop-info .name .shop-activity label:nth-child(3){background: #745bd5;}
+/* 订单信息 --->商家信息--->活动*/
+.order-item .shop-info .shop-info-detail{height: 0;-webkit-transition: all 0.5s linear;overflow: hidden;}
+.order-item .shop-info .shop-info-detail p{text-align: right;}
+.order-item .shop-info .shop-info-detail p span{padding: 3px 5px;margin-right: 5px;border-radius: 3px;background: #44be85;color: #fff;font-size: 18px;}
+.order-item .show-shop-info-detail .shop-info-detail{padding:0 20px;height: auto;border-top: 1px solid #e5e5e5;}
+/* 订单信息 --->商品列表*/
+.o-g-list ul li{position: relative;height: 100px;padding: 10px 20px 10px 120px;border-top: 1px solid #e5e5e5;}
+.o-g-list ul li .good-img{position: absolute;top: 10px;left: 10px;width: 100px;height: 100px;overflow: hidden;}
+.o-g-list ul li .good-img img{width: 100px;height: 100px;}
+.o-g-list ul li .good-name{width: 340px;}
+.o-g-list ul li .good-name h4{line-height: 40px;}
+.o-g-list ul li .good-name p{color: #999;}
+.o-g-list ul li .good-name p span.xianshi strong{margin: 5px;color: #ff8000;}
+.o-g-list ul li .good-number{position: absolute;top: 10px;right: 20px;width: 160px;line-height: 40px;}
+.o-g-list ul li .good-number p.price{font-size: 30px;color: #f92424;}
+.o-g-list ul li .good-number p.num{padding-left: 7px;color: #999;}
+/* 订单信息 --->留言*/
+.your-message{height: 50px;line-height: 50px;padding: 10px 20px;border-top: 1px solid #e5e5e5;}
+.your-message textarea{width: 600px;height: 50px;font-size: 20px;line-height: 50px;border: none;}
+/* 订单信息 --->每个店铺的计算*/
+.shop-account{padding: 10px 20px;line-height: 50px;text-align: right;border-top: 1px solid #e5e5e5;}
+.shop-account dl dt{width: 300px;display: inline-block;}
+.shop-account dl dd{display: inline-block;width: 150px;height: 50px;line-height: 50px;}
+.shop-account dl.mansong,.shop-account dl.voucher{color: #44be85;}
+.shop-account dl.mansong dt a{margin-left: 10px;color: #44be85;}
+.shop-account dl.voucher select{width: 280px;height: 48px;border:1px solid #e5e5e5;border-radius: 3px;font-size: 24px;}
+.shop-account dl.total dd{color: #f92424;font-size: 30px;}
+
+
+
+
+
+/* 详细信息 */
+.order-wrapper .information-detail .i-d-title{position: relative;height: 80px;line-height: 80px;text-align: center;font-size: 30px;color: #fff;background: #ff8000;}
+.order-wrapper .information-detail .i-d-title div.icon-back1{position: absolute;top: 0;left: 0;width: 80px;height: 80px;}
+
+.information-detail-c{padding: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-登录</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/login.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper login">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">登录</div>        
+            </header>
+            <div class="login-content">
+                <form action="" method="get">            
+                    <div class="login-frame mt20">
+                        <dl>
+                            <dt><label class="user"><i class="iconfont icon-my1"></i></label></dt>
+                            <dd><input type="text" name="username" id="username" class="username" value="" maxlength="32" placeholder="用户名/手机号码/邮箱"></dd>
+                        </dl>
+                        <dl>
+                            <dt><label class="password"><i class="iconfont icon-lock"></i></label></dt>
+                            <dd>
+                                <input type="password" name="password" id="password" class="password" value="" maxlength="32" placeholder="密码">
+                                <input type="text" name="password2" id="password2" class="password password2" value="" maxlength="32" placeholder="密码">
+                                <div class="switch-pw" id="switch-pw">
+                                    <div class="switch-btn"></div>
+                                </div>
+                            </dd>
+                        </dl>
+                        
+                    </div> 
+                </form>      
+                <div class="btn mt20 mb20">
+                    <button type="submit" class="submit" id="SubmitStatic">登　录</button>
+                </div>                
+                <div class="login-other mt20 pt20">
+                    <h4>还可以选择以下方式登录</h4>
+                    <div class="login-other-c">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="login-icon weixin"><span></span></div>
+                                    <h3>微信账号登录</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="loginWeiBo">
+                                    <div class="login-icon weibo"><span></span></div>
+                                    <h3>新浪微博登录</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="loginQQ">
+                                    <div class="login-icon qq"><span></span></div>
+                                    <h3>QQ账号登录</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="goto-reg">
+                            <a href="">没有账号？<label>注册账号</label><span class="f-r"><i class="iconfont icon-right1"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+<div id="information"></div>
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+        var _e = $("#information");
+        $("#SubmitStatic").on("click",function(){
+            if($("#username").val() !=""){
+                if($("#password").val() !=""){
+                    //ajax验证从这里开始，基本上可以使用，修改数据的链接地址即可
+                    $.ajax({
+                        type: "POST",
+                        url:"<?php echo urlWap('login','logic_check'); ?>",
+                        data:"user_name=" + $('#username').val() + "&password=" + $('#password').val(),
+                        success: function(msg) {
+                            if (msg == "fail") {
+                                _e.html('<div class="prompt-txt prompt-txt-animate" id="error-txt"><p>对不起，用户名或密码错误</p></div>');
+                            }else if (msg == "success") {
+                                var url;
+                                if($("#prev_url").data('url') == null || $("#prev_url").data('url') == ''){
+                                    url = "<?php echo urlWap('member','index'); ?>";
+                                }else{
+                                    url = $("#prev_url").data('url');
+                                }
+                                if (is_wx) {
+                                    prop_show(url);
+                                } else {
+                                    _e.html('<div class="prompt-txt prompt-txt-animate" id="error-txt"><p>登陆成功！跳转中...</p></div>');
+                                    setInterval(function(){window.location.href = url;},1500);
+                                }
+
+                            }else if(msg == "limit"){
+                                _e.html('<div class="prompt-txt prompt-txt-animate" id="error-txt"><p>操作被限制！请稍后再试</p></div>');
+                            }
+
+                        }
+
+                    });
+                }else{
+                    _e.html('<div class="prompt-txt prompt-txt-animate" id="error-txt"><p>密码不能为空！</p></div>');
+                }
+            }else{
+                   _e.html('<div class="prompt-txt prompt-txt-animate" id="error-txt"><p>用户名不能为空！</p></div>');
+            }
+        });
+        //屏蔽QQ和微信登录
+        $("#loginWeiBo,#loginQQ").on("click",function(){
+            _e.html('<div class="prompt-txt prompt-txt-animate" id="error-txt"><p>此功能正在升级中...</p></div>');
+        });
+
+
+        //密码显示切换
+        var _txt;
+        //绑定输入事件
+        $("#password").bind('input propertychange', function(){
+            _txt = $(this).val();
+            $("#password2").val(_txt);
+        }); 
+        $("#password2").bind('input propertychange', function(){
+            _txt = $(this).val();
+            $("#password").val(_txt);
+        }); 
+        $("#switch-pw").on('click',function(){
+            console.info(_txt);
+            if ($(this).hasClass("view-pw")) {
+                $(this).removeClass("view-pw");
+                $("#password").css("display","block");
+                $("#password2").css("display","none");
+            } else {
+                $(this).addClass("view-pw");
+                $("#password").css("display","none");
+                $("#password2").css("display","block");
+            }
+        });
+</script>
+</body>
+</html>

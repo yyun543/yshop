@@ -1,0 +1,38 @@
+/*收货地址*/
+.information .txt .address{ width:100%; font-size:25px; overflow:hidden}
+.address{ width:640px; font-size:25px; overflow:hidden}
+.address ul li{ width:940px; height:120px; float:left; padding:10px 10px 15px 20px; display:block; margin-bottom:2px; background:#FFF; transition: all 0.3s ease-in-out;}
+.ml320{margin-left:-320px }
+.b_l{border-left:1px solid #efeeee}
+.address ul li .address_l{ width:610px; float:left;height:120px; }
+.address ul li.actived{ background:#33475f; color:#FFF;margin-left: -300px;}
+.address ul li .address_l .txt{ width:512px; float:left; padding:5px}
+.address ul li .address_l .txt .txt_left{ font-size:28px; float:left; width:512px; margin-bottom:12px}
+.address ul li .address_l .lab{display: none;width:88px; float:right; height:120px; text-align:center; line-height:120px; color:#eb4f38; font-size:50px;}
+.address ul li.default .address_l .lab{display: block;}
+/*.address ul li.actived .address_l .lab{display: block;}*/
+.address ul li .address_m{ width:159px; float:left;height:120px;margin-left: 10px; line-height:120px; text-align:center; font-size:50px}
+.address ul li .address_r{ width:158px; float:left;height:120px;line-height:120px;text-align:center; font-size:50px}
+.address ul li .address_m:active, .address ul li .address_r:active{background: #334768;}
+
+
+/*新增收货地址*/
+.address2{ width:640px;  border-bottom:1px solid #f5f5f5;}
+.address2 .address2_box{width:590px; height:80px; line-height:80px; padding:0px 25px; background:#FFF;}
+.address2 .address2_box:active{background: #f9f9f9;}
+.address2 .address2_box a{width:590px; height:80px; display:block}
+.address2 .address2_box .span1{ width:500px; height:80px; float:left; font-size:24px; display:block}
+.address2 .address2_box .span1 input{ width:580px; height:30px; line-height:30px; font-size:24px; color:#666; border:none; outline:none}
+.address2 .address2_box:active .span1 input{background: #f9f9f9;}
+.address2 .address2_box a .span2{width:300px; height:80px; float:right; font-size:22px; color:#999; text-align:right}
+.address2 .address2_box a .span3{float:right; font-size:24px;color:#a6a4a4; text-align:center;width:40px; height:80px;transition: all 0.2s ease-in-out;}
+.foldchild .address2_box a .span3{-webkit-transform: rotate(90deg);}
+.address2 .provinces,.address2 .city,.address2 .county{ width:640px; height:0;overflow: hidden;transition: all 0.2s ease-in-out;}
+.foldchild .provinces,.foldchild .city,.foldchild .county{ width:640px; height:245px;overflow:scroll;-webkit-overflow-scrolling : touch;overflow-x:hidden;overflow-y:visible}
+.address2 .provinces span,
+.address2 .city span,
+.address2 .county span{width:640px; height:80px; line-height:80px;display:block; text-align:center; font-size:24px; color:#666; border-bottom:1px solid #e6e4e4}
+
+/*管理收货地址底部固定条*/
+.address2_bottom{ width:640px; height:80px; text-align:center;  position:fixed; bottom:0; left:0; background:#fc673d; line-height:80px}
+.address2_bottom a{width:640px; height:80px; display:block;  color:#FFF; font-size:30px}

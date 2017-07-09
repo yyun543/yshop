@@ -1,0 +1,45 @@
+.login .header-wrap,.register .header-wrap{position: relative !important;border-bottom: 1px solid #e5e5e5;line-height: 80px;color: #fff;font-size: 30px;text-align: center;background: #ff8000;}
+.login .header-wrap .back,.register .header-wrap .back{position: absolute;top: 0;left: 0;height: 80px;width: 80px;text-align: center;color: #666;}
+
+.login-content{padding: 0 20px;font-size: 24px;}
+.login-content .login-frame,.register-content .register-frame{padding: 20px;border-radius: 5px; background: #fff;box-shadow: 0 0 3px #ddd;}
+.login-content .login-frame dl{margin: 10px 0;}
+.login-content .login-frame dl dt{float: left;margin: 6px 10px 0 0;}
+.login-content .login-frame dl dt label{font-size: 40px;}
+.login-content .login-frame dl dd{position: relative;}
+.login-content .login-frame dl dd input{width: 480px;height: 44px;padding: 8px;font-size: 24px;color: #1c1c1c;}
+.login-content .login-frame dl dd input.username{border-bottom: 1px solid #e5e5e5;}
+.login-content .login-frame dl dd input.password{width: 350px;}
+.login-content .login-frame dl dd input.password2{width: 350px;display: none;}
+.login-content .login-frame dl dd span.f-r{margin:15px 15px 0 0; }
+.login-content .btn button.submit{display: block;width:600px;;height: 80px;border-radius: 5px;font-size: 30px; background: #ff8000;color: #FFF;box-shadow: 0 0 3px #ddd;}
+
+.login-content .login-error{/* display: none; */color: #EB4E38;text-align: center;}
+.login-content .login-other{padding-bottom: 50px;}
+.login-content .login-other h4{margin-bottom: 10px;font-weight: normal;color: #999;}
+.login-content .login-other .login-other-c{padding: 20px;border-radius: 5px;box-shadow: 0 0 3px #ddd;background: #fff;}
+.login-content .login-other .login-other-c ul{padding: 30px 0;overflow: hidden;}
+.login-content .login-other .login-other-c ul li{display: block;float: left;width: 185px;text-align: center;}
+.login-content .login-other .login-other-c ul li .login-icon{width: 60px;height: 60px;margin: 0 auto;padding: 20px;border-radius: 50px;}
+.login-content .login-other .login-other-c ul li div.weixin{background: #56af41;}
+.login-content .login-other .login-other-c ul li div.weibo{background: #fd9c0f;}
+.login-content .login-other .login-other-c ul li div.qq{background: #2f9bdc;}
+
+.login-content .login-other .login-other-c ul li .login-icon span{display: block;width: 60px;height: 60px;background: url(../images/login-icon.png) no-repeat;}
+.login-content .login-other .login-other-c ul li div.weibo span{background-position: 0 -60px;}
+.login-content .login-other .login-other-c ul li div.qq span{background-position: 0 -120px;}
+
+.login-content .login-other .login-other-c ul li h3{margin-top: 20px;font-size: 26px;}
+.login-content .login-other .login-other-c .goto-reg{border-top: 1px solid #e5e5e5;}
+.login-content .login-other .login-other-c .goto-reg a{display: block;padding: 20px 0;color: #1c1c1c;}
+.login-content .login-other .login-other-c .goto-reg a label{color: #EB4E38;}
+.login-content .login-other .login-other-c .goto-reg a span.f-r{margin-top: -5px;}
+.login-content .login-other .login-other-c .goto-reg a span.f-r i{color: #999;font-size: 40px;}
+
+
+
+/*切换密码显示*/
+.switch-pw{position: absolute;top: 2px;right: 10px;width: 100px;height: 50px;padding: 3px;border-radius: 28px;background: #ccc;-webkit-transition: all 0.2s linear;}
+.switch-pw .switch-btn{position: absolute;top: 3px;left: 3px;width: 50px;height: 50px;border-radius: 25px;background: #fff;-webkit-transition: all 0.2s linear;}
+.view-pw{background: #ff8000;}
+.view-pw .switch-btn{left: 53px;}

@@ -1,0 +1,17 @@
+<?php
+/**
+ * 示例模型
+ */
+namespace mobile\models;
+use yphp\model;
+
+class usersModel
+{
+    public function getAllUsers()
+    {
+        // 实例化模型
+        $model = new model();
+        $data = $model->select('bbs_users','*');
+        return $data;
+    }
+}

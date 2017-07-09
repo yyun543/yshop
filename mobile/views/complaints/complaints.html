@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-投诉</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/complaints.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper register">
+          <header class="header">
+              <div class="back-btn iconfont icon-back"></div>
+              <div class="header-title">投诉</div>        
+          </header>
+          <!--投诉类型-->
+           <div class="complaints">
+              <div class="complaints_box" id="complaints-title">
+                <a href="javascript:;">
+                  <span class="span1">投诉类型1</span>
+                  <span class="span2"> <i class="iconfont icon-right"></i></span>       
+                 </a>
+              </div>
+              <div class="complaints_content select-more">
+                 <ul>
+                     <li class="curr"><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">投诉类型1</a></li>
+                     <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">投诉类型2</a></li>
+                     <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">投诉类型3</a></li>
+                 </ul>
+              </div>
+           </div>
+          <!--投诉内容-->
+           <div class="complaints" style=" background:#FFF">
+                  <label for="complains_content">  
+                  <textarea id="complains_txt" name="complains_content" class="textarea" placeholder="请输入投诉内容"></textarea>
+                   </label>
+           </div>
+           <!--手机号码-->
+           <div class="complaints" style="margin-bottom:200px">
+              <div class="complaints_box">
+                  <span class="span1">手机号码</span>
+                  <span class="span3"><label for="phone"><input name="" type="text" id="phone"></label></span>
+              </div>
+           </div>
+          <!--底部固定-->
+          <div class="bottom" id="conserve-complaints">
+              <a href="javascript:;">提交投诉</a>
+          </div>    
+      </div>
+    </div>
+</div>
+      
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    //展开收起
+    $("#complaints-title").on("click",function(){
+      $(this).parent().toggleClass("foldchild");
+    });
+
+    //选择项
+    $(".select-more li").on("click",function(){
+      $(this).addClass("curr").siblings().removeClass("curr");      
+      var txt = $(this).find("a").text();
+      $(this).parent().parent().prev().find("span.span1").html(txt);
+    });
+    $("#complains_txt").on("click",function(){
+      $("#complaints-title").parent().removeClass("foldchild");
+    });
+</script>
+</body>
+</html>

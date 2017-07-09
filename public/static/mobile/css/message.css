@@ -1,0 +1,7 @@
+.message{ width:640px;background: #fff;}
+.message a{ width:640px; height:120px; display:block;background:#fff; border-bottom:1px solid #e5e5e5;}
+.message a .message_list{ width:580px; height:60px; padding:30px }
+.message a .message_list img{ width:60px; height:60px; float:left; margin-right:20px}
+.message a .message_list .list{ width:500px; height:60px; float:left}
+.message a .message_list .list h4{ width:500px; height:30px; line-height:30px; font-size:24px; overflow:hidden; color:#666}
+.message a .message_list .list p{ width:500px; height:35px; line-height:35px; font-size:24px; overflow:hidden; color:#999}

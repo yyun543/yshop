@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-账户余额</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/acount.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper">
+            <header class="header noborder">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">账户余额</div>
+            </header>
+            <div class="acount-wrapper">
+                <!-- 个人账户余额公共部分开始 -->
+                <div class="acount-nav">
+                    <ul>
+                        <li class="actived">
+                            <a href="">交易记录</a>
+                        </li>
+                        <li>
+                            <a href="">充值记录</a>
+                        </li>
+                        <li>
+                            <a href="">提现记录</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my-acount-info">
+                    <div class="balance">
+                        <h3><em>￥</em>500.00</h3>
+                        <p>账户余额</p>
+                    </div>
+                    <div class="freeze">
+                        <h3><em>￥</em>5.00</h3>
+                        <p>冻结金额</p>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <!-- 个人账户余额公共部分结束 -->
+
+                <!-- 交易记录列表开始 -->
+                <div class="transaction">
+                    <div class="nav mt10">
+                        <ul>
+                            <li class="curr"><a href="">收入</a></li>
+                            <li><a href="">支出</a></li>
+                            <li><a href="">冻结</a></li>
+                        </ul>
+                    </div>
+                    <div class="record-list">
+                        <!-- 支出 ******************************************************************-->
+                        <ul>
+                            <li>
+                                <h3><span>订单号：7000000000035501</span><span class="time f-r">2015-12-21</span></h3>
+                                <div class="content">
+                                    <div class="caption f-l">说明：提现成功</div>
+                                    <div class="right-bottom-item f-r">
+                                        <p class="color-orange"><em>+</em>500.00</p>
+                                        <p>收入</p>
+                                    </div>
+                                    <!-- 下面这个div依据情况显示与不显示 -->
+                                    <div class="right-bottom-item f-r">
+                                        <p class="color-gray"><em>+</em>500.00</p>
+                                        <p>冻结</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h3><span>订单号：7000000000035501</span><span class="time f-r">2015-12-21</span></h3>
+                                <div class="content">
+                                    <div class="caption f-l">说明：提现成功</div>
+                                    <div class="right-bottom-item f-r">
+                                        <p class="color-orange"><em>+</em>500.00</p>
+                                        <p>收入</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <br /><br /><br /><br /><br /><br />
+                        <!-- 收入 ******************************************************************-->
+                        <ul>
+                            <li>
+                                <h3><span>订单号：7000000000035501</span><span class="time f-r">2015-12-21</span></h3>
+                                <div class="content">
+                                    <div class="caption f-l">说明：提现成功</div>
+                                    <div class="right-bottom-item f-r">
+                                        <p class="color-green"><em>-</em>500.00</p>
+                                        <p>支出</p>
+                                    </div>
+                                    <!-- 下面这个div依据情况显示与不显示 -->
+                                    <div class="right-bottom-item f-r">
+                                        <p class="color-gray"><em>+</em>500.00</p>
+                                        <p>冻结</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h3><span>订单号：7000000000035501</span><span class="time f-r">2015-12-21</span></h3>
+                                <div class="content">
+                                    <div class="caption f-l">说明：提现成功</div>
+                                    <div class="right-bottom-item f-r">
+                                        <p class="color-green"><em>-</em>500.00</p>
+                                        <p>支出</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <br /><br /><br /><br /><br /><br />
+                        <!-- 冻结 ******************************************************************-->
+                        <ul>
+                            <li>
+                                <h3><span>订单号：7000000000035501</span><span class="time f-r">2015-12-21</span></h3>
+                                <div class="content">
+                                    <div class="caption f-l">说明：提现成功</div>
+                                    <div class="right-bottom-item f-r">
+                                        <p class="color-gray"><em>+</em>500.00</p>
+                                        <p>冻结</p>
+                                    </div>
+                                    <!-- 下面这个div依据情况显示与不显示 -->
+                                    <div class="right-bottom-item f-r">
+                                        <p class="color-green"><em>-</em>500.00</p>
+                                        <p>支出</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h3><span>订单号：7000000000035501</span><span class="time f-r">2015-12-21</span></h3>
+                                <div class="content">
+                                    <div class="caption f-l">说明：提现成功</div>
+                                    <div class="right-bottom-item f-r">
+                                        <p class="color-gray"><em>-</em>500.00</p>
+                                        <p>冻结</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="rechange-add mt10">
+                    <a href="">充&nbsp;&nbsp;值</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="information"></div>
+<!-- 页面加载loading -->
+<div id="pageLoading"></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+</body>
+</html>

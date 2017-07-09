@@ -1,0 +1,19 @@
+/*投诉*/
+.complaints{ width:640px;  border-bottom:1px solid #f5f5f5;}
+.complaints .complaints_box{width:590px; height:80px; line-height:80px; padding:0px 25px; background:#FFF; border-bottom:1px solid #f5f5f5;}
+.complaints .complaints_box:active{background: #f9f9f9;}
+.complaints .complaints_box:active input{background: #f9f9f9;}
+.complaints .complaints_box a{width:590px; height:80px; display:block}
+.complaints .complaints_box .span1{ width:120px; height:80px; float:left; font-size:24px; color:#666}
+.complaints .complaints_box .span2{ width:40px; height:70px; line-height:70px; float:right; font-size:24px;color:#a6a4a4; text-align:center;transition: all 0.3s ease-in-out;}
+.foldchild .complaints_box .span2{-webkit-transform: rotate(90deg);}
+.complaints_content{width: 600px;height: 0;padding:0;overflow: hidden;transition: all 0.3s ease-in-out;}
+.foldchild .complaints_content{height: 214px;padding:15px 0 30px 0;overflow-y:hidden;}
+.select-more ul li{ width:600px;padding: 0 20px; line-height:80px; height:80px; font-size:24px; color:#666; }
+.select-more ul li span{font-size:30px;  margin-right:10px; margin-left:10px;transition: all 0.3s ease-in-out;}
+.select-more ul li.curr span{color: #ff6633;}
+.select-more ul li a{ border-bottom:1px solid #e6e4e4; display:inline-block; width:530px; font-size:24px}
+
+.complaints .complaints_box .span3{ width:200px; height:80px; float:left; line-height:80px;float:left}
+.complaints .complaints_box .span3 input{ width:450px; height:40px; border:none; font-size:24px;outline:none; }
+.textarea{border:0; width:590px; height:200px; outline:none; font-size:24px; color:#666; padding:20px 25px; font-family: Arial,Helvetica,"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",SimHei,"黑体",sans-serif ;!important;}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-我的订单</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/order-bak.css">
+    <script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper register">
+          <header class="header">
+              <div class="back-btn iconfont icon-back1"  id="backHistory"></div>
+              <div class="header-title">我的订单</div>      
+          </header>
+
+
+
+          <!--收货详细信息-->
+              <div class="information mb10">
+                <a href="address.html">
+                  <div class="ico"><i class="iconfont icon-location"></i></div>
+                   <div class="txt">
+                      <div class="txt_left">
+                         <span class="name" style="float:left;">收货人：黄大来</span>
+                         <span class="phone" style="float:right"> 18007838688</span>
+                      </div>
+                      <div class="address" style="float:left; line-height:35px">地址：广西 桂林 七星区 桂林市高新区国家信息产业园 8-3号办公楼</div>
+                   </div>
+                   <div class="lab">
+                      <i class="iconfont icon-right"></i>
+                   </div>
+                </a>           
+              </div>
+              
+              <div class="clear"></div>
+             <!--产品列表-->
+            <div class="od-title">
+                <span class="iconfont icon-shop od-title-shop"></span>
+                  <span class="o-name">这是个店铺的名字</span>            
+            </div>
+             <div class="Product_list mb10">
+                <ul>
+                    <li>
+                       <a href="order.html">
+                       <img src="/static/mobile/images/c-5.jpg">
+                       <h1>EAMEY 绎美 unik3 智能手表</h1>
+                       <font>
+                           <span><lable>￥</lable>300.00</span>
+                           <span class="span"><lable>X</lable>  1</span>
+                       </font>
+                       </a>
+                    </li>
+                     <li>
+                       <a href="item.html">
+                       <img src="/static/mobile/images/c-5.jpg">
+                       <h1>EAMEY 绎美 unik3 智能手表</h1>
+                       <font>
+                           <span><lable>￥</lable>300.00</span>
+                           <span class="span"><lable>X</lable>  1</span>
+                       </font>
+                       </a>
+                    </li>
+                    
+                </ul>
+             </div>
+             
+             <div class="clear"></div>
+          <!--支付方式-->
+             <div class="pay">
+                <div class="pay_box" id="paylist">
+                  <a href="javascript:;">
+                    <span class="span1">支付方式</span>
+                    <span class="span3"> <i class="iconfont icon-right"></i></span>       
+                    <span class="span2">支付宝</span>
+                   </a>
+                </div>
+                <div class="morecontent paylist select-more">
+                   <ul>
+                       <li class="curr"><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">支付宝</a></li>
+                       <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">网上银行</a></li>
+                       <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">货到付款</a></li>
+                   </ul>
+                </div>
+             </div>
+             
+            <!--配送方式-->
+             <div class="pay">
+               <div class="pay_box" id="courier">
+                 <a href="javascript:;">
+                    <span class="span1">配送方式</span>
+                    <span class="span3"> <i class="iconfont icon-right"></i></span>       
+                    <span class="span2">顺丰快递</span>
+                  </a>
+                </div>         
+                <div class="morecontent courier select-more">
+                   <ul>
+                       <li class="curr"><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">顺丰快递</a></li>
+                       <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">圆通快递</a></li>
+                       <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">中通快递</a></li>
+                       <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">申通快递</a></li>
+                       <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">天天快递</a></li>
+                       <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">邮政快递</a></li>
+                       <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">韵达快递</a></li>
+                       <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">联邦快递</a></li>
+                       <li><span><i class="iconfont icon-radiobox"></i></span><a href="javascript:;">优速快递</a></li>
+                   </ul>
+                </div>
+             </div> 
+                <!--发票-->
+             <div class="pay" id="invoices">
+              <div class="pay_box">
+                <span class="span1">发票</span>
+                <span class="span4">            
+                   <label class="show"><div class="bdiv2"><div class="sdiv2"></div></div></label>              
+                </span>     
+                </div>  
+             </div>   
+              <!--订单留言-->
+             
+                 <div class="pay">
+                  <div class="pay_box mes">
+                    <a href="javascript:;">
+                    <span class="span1"><input type="text" name="message" id="message" placeholder="留言"></span> 
+                    </a>
+                    </div>
+                 </div> 
+             
+             <div class="total">
+                    共<span>2</span>件  
+                    <p>运费：<span class="mr20">￥0.00</span>    商品金额：<span>￥300.00</span></p>
+             </div> 
+             
+             
+          <!--底部固定-->
+          <div class="orde_bottom">
+               <div class="zg">
+                   <span class="font1">总金额：</span>
+                   <span class="font2"><label style="font-size:24px; color:#fff">￥</label>300.00</span>
+               </div>
+               <div class="butn"><a href="orderdetail.html">提交订单</a></div>
+          </div>
+      </div>
+    </div>
+</div>
+      
+
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (ev) {
+        $("#invoices").on("click",function(){
+          $(this).toggleClass("swicth");
+        });
+    });
+
+
+    //选择项
+    $(".select-more li").on("click",function(){
+      $(this).addClass("curr").siblings().removeClass("curr");
+      var txt = $(this).find("a").text();
+      $(this).parent().parent().prev().find("span.span2").html(txt);
+    });
+
+    //提示信息
+    $("#paylist,#courier").on("click",function(){
+      $(this).parent().toggleClass("foldchild");
+    })
+</script>
+</body>
+</html>

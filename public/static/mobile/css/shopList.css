@@ -1,0 +1,56 @@
+.shop-classification{width: 640px;height: 170px;padding: 30px 0;background: #f2f2f2;}
+.sc-slider{position: relative;}
+.sc-slider .slides li{float: left;width: 640px;height: 170px;}
+.sc-slider .slides li a{display: block;float: left;width: 120px;padding-top: 110px;margin: 0 20px;background: url(../images/all-classify-icon.png) 0 0 no-repeat;}
+.sc-slider .slides li a.cat1{background-position: 0 0;}
+.sc-slider .slides li a.cat2{background-position: -120px 0;}
+.sc-slider .slides li a.cat3{background-position: -240px 0;}
+.sc-slider .slides li a.cat4{background-position: -360px 0;}
+.sc-slider .slides li a.cat5{background-position: -480px 0;}
+.sc-slider .slides li a.cat6{background-position: -600px 0;}
+.sc-slider .slides li a.cat7{background-position: -720px 0;}
+.sc-slider .slides li a.cat8{background-position: -840px 0;}
+.sc-slider .slides li a.cat9{background-position: -960px 0;}
+.sc-slider .slides li a.cat10{background-position: -1080px 0;}
+.sc-slider .slides li a.cat11{background-position: -1200px 0;}
+.sc-slider .slides li a.cat12{background-position: -1360px 0;}
+.sc-slider .slides li a p{margin-top: 10px;text-align: center; font-size: 24px;color: #555;}
+.sc-slider .flex-control-paging {position: absolute;bottom: -20px;right: 265px;z-index: 10;display:inline-block;width: 80px;}
+.sc-slider .flex-control-paging li {float: left;overflow: hidden;}
+.sc-slider .flex-control-paging li a {display:block;width:10px; height:10px;margin-right: 10px; border-radius: 50%;background: #fff;text-indent:-9000px;}
+.sc-slider .flex-control-paging li a.flex-active {background: #ff8000;}
+
+
+.filtrate{ position:relative; width:640px; margin-top:20px; height:80px; line-height:80px; vertical-align:middle; text-align:center;border-bottom:#e5e5e5 1px solid; background-color:#fff;}
+.filtrate .item{position:relative;float: left;}
+.filtrate .item a{display: block;width:212px; border-left:#e5e5e5 1px solid; border-bottom:#e5e5e5 1px solid;}
+.filtrate .item .classify b,.filtrate .item .distance b,.filtrate .item .sort b{display: inline-block;height: 0;line-height: 0;width: 0;vertical-align: middle;border-width: 5px;border-style: solid;margin-left: 20px;border-color: #666 transparent transparent transparent;-webkit-transition: -webkit-transform ease .2s;-moz-transition: -moz-transform ease .2s;-webkit-transform-origin: 3px 1.5px;-moz-transform-origin: 3px 1.5px;}
+.classify-c,.distance-c,.sort-c{ position:absolute; display:none;top:81px; left:0px; z-index:111;width:212px; background-color:#FFF;box-shadow: 0 4px 8px 1px #ddd;}
+.classify-c li a,.distance-c li a,.sort-c li a{display: block;height:80px; line-height:80px; vertical-align:middle;border-bottom:#e5e5e5 1px solid;}
+
+.shopList{ margin-bottom:20px; position:relative; z-index:2;}
+.shopList ul{ border-bottom:}
+.level1,.level2,.level3,.level4{ background-color:#fff;}
+.level1{ position:relative; z-index:2; padding:20px 10px 0px 17px;}
+.level1 .logo{width: 68px;height: 68px;}
+.level2 img{width: 125px;height: 125px;}
+.level3 img{width: 640px;height: 208px;}
+
+.level1 .pink{color:#fc6b7c;}
+.level1 .shopName{ color:#000;}
+.level1 .shopName,.percent{ margin:3px 0 0 20px; }
+.location-shop{position:fixed; top:0px; left:0px; width:100%; z-index:999999; background-color: rgba(0,0,0,0.5); height:100%;padding:150px 0 0 10px; display:none; }
+.location-shop-info{position: relative;width:620px;background-color:#fff;}
+.location-shop .location-shop-info h3{ text-align:center;line-height: 50px;font-size: 30px;font-weight: normal;}
+.location-shop .location-shop-info .shopinfo{padding:10px 0 0 10px;height: 80px;}
+.location-shop .location-shop-info .shopinfo p{margin-bottom: 10px;line-height: 32px;padding-left: 35px;background: url(../images/shoplist-location-icon.png) 0 0 no-repeat;}
+.location-shop .location-shop-info .shopinfo p.tel-number{background-position: 0 -32px;}
+.location-btn{height:60px; line-height:60px; vertical-align:middle; font-size:36px; margin-right:20px;}
+
+.tel a{position: absolute;bottom: 5px;right: 5px;display: block;width: 80px;height: 80px;background: url(../images/shoplist-tel.png);}
+.close-btn{ width:80px; height:80px; line-height:80px; vertical-align:middle; color:#fff; background-color:#ff8000; border-radius:100%; text-align:center; font-size:60px; margin-left:260px; margin-top:20px;}
+.level2 li{ float:left; margin:20px 17px 20px 17px;}
+.level3{ display:none;}
+.level4{ height:60px; line-height:60px; vertical-align:middle; text-align:center; border-top:#e5e5e5 1px solid;}
+.level4 .check-active{ margin-right:10px;}
+.level4 .iconfont{ font-size:30px;}

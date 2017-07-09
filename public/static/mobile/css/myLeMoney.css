@@ -1,0 +1,87 @@
+.contentWrap .moneyDetail {
+    width: 640px;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.contentWrap .moneyDetail .moneyNum {
+    height: 100px;
+    width: 320px;
+    border-right: 1px solid #F2F2F2;
+}
+
+.contentWrap .moneyDetail .moneyNum p {
+    line-height: 100px;
+    font-size: 24px;
+    color: #999;
+    padding-left: 30px;
+}
+
+.contentWrap .moneyDetail .moneyNum span {
+    color: #FF8000;
+    font-size: 30px;
+}
+
+.contentWrap .moneyDetail .choose p {
+    line-height: 100px;
+    font-size: 24px;
+    color: #999;
+    padding-left: 30px;
+}
+
+.contentWrap .moneyDetail .choose p select {
+    border: none !important;
+    font-size: 24px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url("../images/downArrow.png") no-repeat scroll right center transparent;
+    padding-right: 30px;
+}
+
+.contentWrap .incomeDetail {
+    background-color: #ffffff;
+    height: 250px;
+    width: 640px;
+}
+
+.contentWrap .incomeDetail div {
+    font-size: 24px;
+    color: #999;
+}
+
+.contentWrap .incomeDetail .date {
+    border-bottom: 1px solid #F2F2F2;
+    padding-left: 50px;
+    line-height: 60px;
+}
+
+.contentWrap .incomeDetail .flowIn {
+    width: 640px;
+    height: 66px;
+}
+
+.contentWrap .incomeDetail .flowIn .income {
+    color: #333;
+    padding-left: 50px;
+    line-height: 60px;
+}
+
+.contentWrap .incomeDetail .flowIn .income span {
+    color: #81BC4C;
+    font-size: 26px;
+}
+
+.contentWrap .incomeDetail .flowIn .from {
+    padding-right: 100px;
+    line-height: 60px;
+}
+.contentWrap .incomeDetail .des{
+    padding-left: 50px;
+    line-height: 60px;
+}
+.contentWrap .incomeDetail .serialNum{
+    padding-left: 50px;
+    line-height: 60px;
+}

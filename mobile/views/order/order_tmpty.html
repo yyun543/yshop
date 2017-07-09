@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-我的订单</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/empty.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="left-content" id="left-content">
+        <div class="close-layer" id="CloseLayer"></div><!-- 触发层 -->
+        <div class="left-content-main">
+            <div class="search-layer">
+                <div class="s-layer-h">
+                    <div class="closeSearch iconfont icon-back1" id="closeSearch"></div>
+                    <h3>搜索</h3>
+                </div>
+                <div class="search-txt pb20">
+                    <form action="">
+                        <div class="search-switch" id="search-switch">
+                            <div class="btn"></div>
+                            <span class="shop curr">商家</span>
+                            <span class="good">商品</span>
+                            <input class="none" type="text" id="search-style">
+                        </div>
+                        <div class="search-val">
+                            <input type="text" id="keyword" name="kw" class="inp">
+                            <button><i class="iconfont icon-search1"></i></button>
+                        </div>
+                    </form>                        
+                </div>
+                <div class="search-select" id="search-select">
+                    <div class="search-unit">
+                        <div class="su-h hot-kw">热门关键词</div>
+                        <div class="su-list">
+                            <ul>
+                                <li>按摩</li>
+                                <li>电影</li>
+                                <li>KTV</li>
+                                <li>螺蛳粉</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search-unit">
+                        <div class="su-h hot-cat">热门分类</div>
+                        <div class="su-list">
+                            <ul>
+                                <li>按摩</li>
+                                <li>电影</li>
+                                <li>KTV</li>
+                                <li>螺蛳粉</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </div>
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper register">
+          <header class="header">
+              <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+              <div class="header-title">我的订单</div>
+              <div class="search-btn iconfont icon-search1" id="search-btn" style="left:auto;right:0;"></div>         
+          </header>
+      </div>
+      <div class="empty_box">
+         <!--顶部选项-->
+           <div class="order_menu">
+             <ul>
+               <li class="hover"><a href="javascript:;">全部</a></li>
+               <li><a href="javascript:;">待付款</a></li>
+               <li><a href="javascript:;">待发货</a></li>
+               <li><a href="javascript:;">待收货</a></li>
+               <li><a href="javascript:;">待评价</a></li>
+             </ul>
+           </div>
+           
+           
+           <div class="empty_top">
+             <i class="iconfont icon-order"></i>
+           </div>
+           <div class="empty_bottom">
+               <h2>您还没有订单</h2>
+               <p>去挑选您需要的宝贝吧！</p>
+               <a href="#">
+                <div class="a">马上去逛逛</div>
+               </a>
+            </div>  
+      </div>
+    </div>
+</div>
+      
+
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    $(".order_menu ul li").on("click",function(){
+      $(this).addClass("hover").siblings().removeClass("hover");
+    });
+</script>
+</body>
+</html>

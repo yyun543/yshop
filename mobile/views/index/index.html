@@ -1,0 +1,463 @@
+{% extends "common/layout.html" %}
+
+{% block header%}
+{{ include('common/header.html') }}
+{% endblock%}
+
+{% block content %}
+
+    <div class="main"><!-- 页面主要内容展示 -->
+        <!-- 头部 -->
+        <header class="header noborder">
+            <div class="search-btn iconfont icon-search1" id="search-btn"></div>
+            <div class="more-btn iconfont icon-more" id="more-btn"><em></em></div>
+            <div class="logo"><img src="/static/mobile/images/logo.png"></div>
+        </header>
+        <!-- banner -->
+        <section class="block-slider" id="banner">
+            <div id="home_slider" class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="slide">
+                            <img src="/static/mobile/images/banner01.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <img src="/static/mobile/images/banner02.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <img src="/static/mobile/images/banner03.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <img src="/static/mobile/images/banner04.jpg" alt="" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <img src="/static/mobile/images/banner05.jpg" alt="" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 菜单 -->
+        <nav class="nav-m">
+            <ul>
+                <li class="navItem1">
+                    <a href="">
+                        <div class="navItem">
+                        </div>
+                        <p>优惠特卖</p>
+                    </a>
+                </li>
+                <li class="navItem2">
+                    <a href="">
+                        <div class="navItem">
+                        </div>
+                        <p>特权卡</p>
+                    </a>
+                </li>
+                <li class="navItem3">
+                    <a href="">
+                        <div class="navItem">
+                        </div>
+                        <p>乐币购</p>
+                    </a>
+                </li>
+                <li class="navItem4">
+                    <a href="">
+                        <div class="navItem">
+                        </div>
+                        <p>全部分类</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 堆头条 -->
+        <div class="headlines">
+            <div class="icon f-l"></div>
+            <div class="txt">
+                <a href="">日本大牌进驻天猫，进口尖货限时特价进口尖货限时特价</a>
+            </div>
+            <div class="shangjia">
+                <a href="">
+                    <p class="number">3000</p>
+                    <p>商家入驻</p>
+                </a>
+            </div>
+        </div>
+        <!-- 分类列表 -->
+        <section class="classification">
+            <div class="c-list">
+                <ul class="clearfix">
+                    <li>
+                        <div class="c-unit">
+                            <div class="c-img">
+                                <a href="">
+                                    <img class="lazyLoadImg" data-original="/static/mobile/images/c-img.jpg" width="318" height="200">
+                                </a>
+                            </div>
+                            <div class="c-name">
+                                <span class="name"><a href="">产品分类产品分类</a></span>
+                                <span class="num">3000家</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="c-unit">
+                            <div class="c-img">
+                                <a href="">
+                                    <img class="lazyLoadImg" data-original="/static/mobile/images/c-img.jpg" width="318" height="200">
+                                </a>
+                            </div>
+                            <div class="c-name">
+                                <span class="name"><a href="">产品分类产品分类</a></span>
+                                <span class="num">3000家</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="c-unit">
+                            <div class="c-img">
+                                <a href="">
+                                    <img class="lazyLoadImg" data-original="/static/mobile/images/c-img.jpg" width="318" height="200">
+                                </a>
+                            </div>
+                            <div class="c-name">
+                                <span class="name"><a href="">产品分类产品分类</a></span>
+                                <span class="num">3000家</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="c-unit">
+                            <div class="c-img">
+                                <a href="">
+                                    <img class="lazyLoadImg" data-original="/static/mobile/images/c-img.jpg" width="318" height="200">
+                                </a>
+                            </div>
+                            <div class="c-name">
+                                <span class="name"><a href="">产品分类产品分类</a></span>
+                                <span class="num">3000家</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- banner2 -->
+        <section class="miniBaner180 mt10">
+            <a href=""><img src="/static/mobile/images/mini-banner-180.jpg"></a>
+        </section>
+        <!-- 特权卡 -->
+        <section class="privilege">
+            <div class="privilege-list">
+                <ul class="clearfix">
+                    <li>
+                        <div class="p-unit">
+                            <div class="p-img">
+                                <a href="">
+                                    <img class="lazyLoadImg" data-original="/static/mobile/images/vip-img.jpg" width="318" height="170">
+                                </a>
+                            </div>
+                            <div class="p-info">
+                                <div class="shop-img">
+                                    <a href=""><img src="/static/mobile/images/avatar.jpg"></a>
+                                </div>
+                                <div class="shop-name">
+                                    <p class="txt-hidden"><a href="">店铺名称店铺名称店铺名称</a></p>
+                                    <p>
+                                        <span class="value">￥1000</span>
+                                        <span class="sign">VIP</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-unit">
+                            <div class="p-img">
+                                <a href="">
+                                    <img class="lazyLoadImg" data-original="/static/mobile/images/vip-img.jpg" width="318" height="170">
+                                </a>
+                            </div>
+                            <div class="p-info">
+                                <div class="shop-img">
+                                    <a href=""><img src="/static/mobile/images/avatar.jpg"></a>
+                                </div>
+                                <div class="shop-name">
+                                    <p class="txt-hidden"><a href="">店铺名称店铺名称店铺名称</a></p>
+                                    <p>
+                                        <span class="value">￥1000</span>
+                                        <span class="sign">VIP</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-unit">
+                            <div class="p-img">
+                                <a href="">
+                                    <img class="lazyLoadImg" data-original="/static/mobile/images/vip-img.jpg" width="318" height="170">
+                                </a>
+                            </div>
+                            <div class="p-info">
+                                <div class="shop-img">
+                                    <a href=""><img src="/static/mobile/images/avatar.jpg"></a>
+                                </div>
+                                <div class="shop-name">
+                                    <p class="txt-hidden"><a href="">店铺名称店铺名称店铺名称</a></p>
+                                    <p>
+                                        <span class="value">￥1000</span>
+                                        <span class="sign">VIP</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="p-unit">
+                            <div class="p-img">
+                                <a href="">
+                                    <img class="lazyLoadImg" data-original="/static/mobile/images/vip-img.jpg" width="318" height="170">
+                                </a>
+                            </div>
+                            <div class="p-info">
+                                <div class="shop-img">
+                                    <a href=""><img src="/static/mobile/images/avatar.jpg"></a>
+                                </div>
+                                <div class="shop-name">
+                                    <p class="txt-hidden"><a href="">店铺名称店铺名称店铺名称</a></p>
+                                    <p>
+                                        <span class="value">￥1000</span>
+                                        <span class="sign">VIP</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 乐币 -->
+        <section class="coin mt10">
+            <div class="coin-x1">
+                <div class="coin-x1y1">
+                    <a href=""><img src="/static/mobile/images/coin-x1y1.jpg"></a>
+                </div>
+                <div class="coin-x1y2">
+                    <a href=""><img src="/static/mobile/images/coin-x1y2.jpg"></a>
+                </div>
+            </div>
+            <div class="coin-x2">
+                <a href=""><img src="/static/mobile/images/coin-x2.jpg"></a>
+            </div>
+            <div class="coin-x3">
+                <a href=""><img src="/static/mobile/images/coin-x3.jpg"></a>
+            </div>
+        </section>
+        <!-- 乐币 轮播图-->
+        <section class="coin-slider">
+            <div class="flexslider" id="CoinBanner">
+                <ul class="slides">
+                    <li>
+                        <div class="slide">
+                            <a href=""><img src="/static/mobile/images/mini-banner-200.jpg" alt="" /></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a href=""><img src="/static/mobile/images/mini-banner-200.jpg" alt="" /></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slide">
+                            <a href=""><img src="/static/mobile/images/mini-banner-200.jpg" alt="" /></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 特卖优惠+一小时送达-->
+        <section class="channel">
+            <div class="channel-h">
+                <div class="channel-nav" id="channel-nav">
+                    <div class="btn"></div>
+                    <div class="discount curr" id="discount-btn">特卖优惠</div>
+                    <div class="OneHour" id="OneHour-btn">一小时送达</div>
+                </div>
+            </div>
+            <div class="channel-c">
+                <div class="cc-list" id="cc-list">
+                    <div class="list list1" id="discount-list">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="good-item">
+                                    <div class="g-img">
+                                        <a href=""><img class="lazyLoadImg" data-original="/static/mobile/images/good.jpg" width="318" height="318"></a>
+                                    </div>
+                                    <div class="g-info">
+                                        <p class="name"><a href="">这个是商品的名称这个是商品的名称</a></p>
+                                        <p class="price">
+                                            <span class="now-price"><em>￥</em>192.00</span>
+                                            <span class="o-price">￥192.00</span>
+                                            <span class="mark dis">2折</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="good-item">
+                                    <div class="g-img">
+                                        <a href=""><img class="lazyLoadImg" data-original="/static/mobile/images/good.jpg" width="318" height="318"></a>
+                                    </div>
+                                    <div class="g-info">
+                                        <p class="name"><a href="">这个是商品的名称这个是商品的名称</a></p>
+                                        <p class="price">
+                                            <span class="now-price"><em>￥</em>192.00</span>
+                                            <span class="o-price">￥192.00</span>
+                                            <span class="mark dis">2折</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="good-item">
+                                    <div class="g-img">
+                                        <a href=""><img class="lazyLoadImg" data-original="/static/mobile/images/good.jpg" width="318" height="318"></a>
+                                    </div>
+                                    <div class="g-info">
+                                        <p class="name"><a href="">这个是商品的名称这个是商品的名称</a></p>
+                                        <p class="price">
+                                            <span class="now-price"><em>￥</em>192.00</span>
+                                            <span class="o-price">￥192.00</span>
+                                            <span class="mark dis">2折</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="good-item">
+                                    <div class="g-img">
+                                        <a href=""><img class="lazyLoadImg" data-original="/static/mobile/images/good.jpg" width="318" height="318"></a>
+                                    </div>
+                                    <div class="g-info">
+                                        <p class="name"><a href="">这个是商品的名称这个是商品的名称</a></p>
+                                        <p class="price">
+                                            <span class="now-price"><em>￥</em>192.00</span>
+                                            <span class="o-price">￥192.00</span>
+                                            <span class="mark dis">2折</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="good-item">
+                                    <div class="g-img">
+                                        <a href=""><img class="lazyLoadImg" data-original="/static/mobile/images/good.jpg" width="318" height="318"></a>
+                                    </div>
+                                    <div class="g-info">
+                                        <p class="name"><a href="">这个是商品的名称这个是商品的名称</a></p>
+                                        <p class="price">
+                                            <span class="now-price"><em>￥</em>192.00</span>
+                                            <span class="o-price">￥192.00</span>
+                                            <span class="mark dis">2折</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="good-item">
+                                    <div class="g-img">
+                                        <a href=""><img class="lazyLoadImg" data-original="/static/mobile/images/good.jpg" width="318" height="318"></a>
+                                    </div>
+                                    <div class="g-info">
+                                        <p class="name"><a href="">这个是商品的名称这个是商品的名称</a></p>
+                                        <p class="price">
+                                            <span class="now-price"><em>￥</em>192.00</span>
+                                            <span class="o-price">￥192.00</span>
+                                            <span class="mark dis">2折</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="good-item">
+                                    <div class="g-img">
+                                        <a href=""><img class="lazyLoadImg" data-original="/static/mobile/images/good.jpg" width="318" height="318"></a>
+                                    </div>
+                                    <div class="g-info">
+                                        <p class="name"><a href="">这个是商品的名称这个是商品的名称</a></p>
+                                        <p class="price">
+                                            <span class="now-price"><em>￥</em>192.00</span>
+                                            <span class="o-price">￥192.00</span>
+                                            <span class="mark dis">2折</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="good-item">
+                                    <div class="g-img">
+                                        <a href=""><img class="lazyLoadImg" data-original="/static/mobile/images/good.jpg" width="318" height="318"></a>
+                                    </div>
+                                    <div class="g-info">
+                                        <p class="name"><a href="">这个是商品的名称这个是商品的名称</a></p>
+                                        <p class="price">
+                                            <span class="now-price"><em>￥</em>192.00</span>
+                                            <span class="o-price">￥192.00</span>
+                                            <span class="mark dis">2折</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="good-item">
+                                    <div class="g-img">
+                                        <a href=""><img class="lazyLoadImg" data-original="/static/mobile/images/good.jpg" width="318" height="318"></a>
+                                    </div>
+                                    <div class="g-info">
+                                        <p class="name"><a href="">这个是商品的名称这个是商品的名称</a></p>
+                                        <p class="price">
+                                            <span class="now-price"><em>￥</em>192.00</span>
+                                            <span class="o-price">￥192.00</span>
+                                            <span class="mark dis">2折</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="good-item">
+                                    <div class="g-img">
+                                        <a href=""><img class="lazyLoadImg" data-original="/static/mobile/images/good.jpg" width="318" height="318"></a>
+                                    </div>
+                                    <div class="g-info">
+                                        <p class="name"><a href="">这个是商品的名称这个是商品的名称</a></p>
+                                        <p class="price">
+                                            <span class="now-price"><em>￥</em>192.00</span>
+                                            <span class="o-price">￥192.00</span>
+                                            <span class="mark dis">2折</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list list2" id="OneHour-list">
+                        <ul class="clearfix"></ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+        {% endblock %}
+
+        {% block footer %}
+        {{ include('common/footer.html') }}
+        {% endblock %}

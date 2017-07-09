@@ -1,0 +1,88 @@
+/*充值页面*/
+.acount-recharge,.payment-info{margin: 10px;width: 620px;}
+.acount-recharge .value{height: 80px;padding: 35px 30px;border-radius: 5px;background: #fff;}
+.acount-recharge .value p{line-height: 80px;font-size: 24px;font-size: 24px;color: #666;}
+.acount-recharge .value p input{height: 72px;width: 320px;padding: 3px 5px;margin: 0 10px;border-radius: 5px;border:1px solid #e5e5e5;line-height: 72px;font-size: 24px;}
+.acount-recharge button{height: 80px;width: 620px;border-radius: 5px;line-height: 80px;text-align: center;color: #fff;background: #ff8000;font-size: 30px;}
+
+/*支付提交页面*/
+.payment-info .title{padding: 20px 0 20px 20px;line-height: 36px;font-size: 24px;color: #666;}
+.payment-info .payment-list{position: relative;padding: 20px 20px 40px 150px;border-radius: 5px;background: #fff;}
+.payment-info .payment-list > span{position: absolute;top: 20px;left: 20px;}
+.payment-info .payment-list ul li{position: relative;display: inline-block;width: 120px;padding: 10px 30px;border: 2px solid #fff;/* margin-bottom: 20px; */}
+.payment-info .payment-list ul li i{display: none;}
+.payment-info .payment-list ul li.using{border-radius: 5px;border: 2px solid #ff8000;}
+.payment-info .payment-list ul li.using i{position: absolute; z-index: 1; top: 2px; left: 0px;display: block;width: 32px; height: 32px;background: url(../images/pay-use.png) no-repeat 0 0;}
+.payment-info .btn{height: 80px;padding: 10px 0;}
+.payment-info .btn a{display: block;float: left;height: 80px;border-radius: 5px;text-align: center;line-height: 80px;font-size: 30px;}
+.payment-info .btn a.submit{width: 375px;background: #ff8000;color: #fff;}
+.payment-info .btn a.view{width: 220px;margin-left: 25px;background: #dcdcdc;color: #666;}
+
+
+/*账户余额*/
+.acount-nav{height: 50px;width: 600px;padding: 5px;margin: 20px 15px;border-radius: 30px;background: #ff8000;}
+.acount-nav ul li{float: left;}
+.acount-nav ul li a{display: block;width: 200px;height: 50px;text-align: center;line-height: 50px;font-size: 30px;color: #fff;}
+.acount-nav ul li.actived a{border-radius: 25px;background: #fff;color: #ff8000;}
+.my-acount-info{position: relative;height: 120px;background: #333;color: #fff;text-align: center;font-size: 24px;}
+.my-acount-info .balance,.my-acount-info .freeze{width: 50%;float: left;height: 120px;}
+.my-acount-info h3{margin: 20px 0 5px 0;line-height: 40px;font-size: 40px;}
+.my-acount-info h3 em{font-size: 30px;}
+.my-acount-info .balance h3{color: #ff8000;}
+.my-acount-info .freeze h3{color: #666;}
+.my-acount-info .line{position: absolute;top: 30px;left: 319px;width: 1px;height: 60px;background: #d7d7d7;}
+
+/*列表样式*/
+.record-list ul li{height: 141px;margin-top: 10px;background: #fff;}
+.record-list ul li h3{height: 60px;padding: 0 20px;line-height: 60px;border-bottom: 1px solid #e5e5e5;color: #696969;}
+.record-list ul li h3 span i.icon-select{margin-right: 10px;font-size: 40px;color: #ed4e30;}
+.record-list ul li h3 span i.icon-info{margin-right: 10px;font-size: 40px;color: #3d8edd;}
+.record-list ul li .content{height: 90px;overflow: hidden;font-size: 24px;}
+.record-list ul li .content .caption{width: 300px;height: 80px;padding: 7px 0  0 20px;color: #696969;}
+.right-bottom-item{width: 159px;height: 80px;border-left: 1px solid #e5e5e5;text-align: center;color: #333;padding-top: 7px;}
+p.color-orange em,p.color-green em,p.color-gray em{font-size: 24px;}
+p.color-orange{color: #ff8000;font-size: 30px;}
+p.color-green{color: #2fc798;font-size: 30px;}
+p.color-gray{color: #999;font-size: 30px;}
+
+/*无数据状态*/
+.nocord{padding: 180px 0;text-align: center;}
+.nocord > div{width: 80px;height: 80px;margin: 0 auto;font-size: 80px;padding: 30px;line-height: 80px;border-radius: 50%;background: #CCC;color: #fff;}
+.nocord > p{margin-top: 50px;font-size: 30px;color: #999;}
+
+/*底部充值按钮*/
+.rechange-add a{display: block;width: 640px;height: 80px;text-align: center;line-height: 80px;font-size: 30px;color: #fff;background: #ff8000;}
+
+
+
+/*账户余额--->交易记录*/
+.transaction .nav{height: 80px;background: #fff;}
+.transaction .nav ul li{float: left;width: 33.3333%;}
+.transaction .nav ul li a{display: inline-block;width: 100%;height: 76px;line-height: 76px;text-align: center;border-bottom: 4px solid #fff;font-size: 26px;color: #555;}
+.transaction .nav ul li.curr a{border-color: #ff8000;}
+
+/*账户余额--->充值记录*/
+.rechange .nav{height: 80px;background: #fff;}
+.rechange .nav ul li{float: left;width: 50%;}
+.rechange .nav ul li a{display: inline-block;width: 100%;height: 76px;line-height: 76px;text-align: center;border-bottom: 4px solid #fff;font-size: 26px;color: #555;}
+.rechange .nav ul li.curr a{border-color: #ff8000;}
+
+
+/*账户余额--->提现记录*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

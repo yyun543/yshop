@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-我的消息</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/message.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">我的消息</div>                       
+            </header>
+        </div>
+        <!--我的消息列表-->
+        <div class="message">
+            <a href="orderDetail.html">
+                <div class="message_list">
+                     <img src="/static/mobile/images/message_station.jpg">
+                     <div class="list">
+                       <h4>站内消息</h4>
+                       <p>你的订单已付款，点击查看详情</p>
+                     </div>
+                 </div>
+            </a>                
+            <a href="orderDetail.html">
+                <div class="message_list">
+                 <img src="/static/mobile/images/message_logistics.jpg">
+                 <div class="list">
+                   <h4>物流信息</h4>
+                   <p>你的订单已发货，点击查看详情</p>
+                 </div>
+                 </div>
+            </a>                 
+            <a href="orderDetail.html">
+                 <div class="message_list">
+                 <img src="/static/mobile/images/message_preferential.png">
+                 <div class="list">
+                   <h4>优惠促销</h4>
+                   <p>10月30日，堆乐族商家集体放“价”优惠不可...</p>
+                 </div>
+                 </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    $(".message").css("min-height",winH-81);
+</script>
+</body>
+</html>

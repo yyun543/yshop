@@ -1,0 +1,57 @@
+.commentWrap{
+    background-color: #ffffff;
+    width: 640px;
+    height: 270px;
+    border-top: 10px solid #F2F2F2;
+}
+.commentWrap .commentContent{
+    height: 130px;
+}
+.commentWrap .commentContent .userPic{
+    position: relative;
+    width: 130px;
+    height: 120px;
+}
+.commentWrap .commentContent .userPic img{
+    width: 80px;
+    height: 80px;
+    top: 30px;
+    left: 30px;
+    position: absolute;
+}
+.commentWrap .commentContent .userDetail{
+    width: 510px;
+}
+.commentWrap .commentContent .userDetail .userName{
+    height: 65px;
+}
+.commentWrap .commentContent .userDetail .userName .name{
+    font-size: 24px;
+    padding-top: 30px;
+}
+.commentWrap .commentContent .userDetail .userName .time{
+    font-size: 20px;
+    color: #999;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+.commentWrap .commentContent .comment {
+    height: 65px;
+
+}
+.commentWrap .commentContent .comment p{
+    padding-right: 30px;
+    font-size: 22px;
+    color: #666;
+}
+.commentWrap .commentPic{
+    height: 135px;
+    padding-right: 30px;
+}
+
+.commentWrap .commentPic .picWrap img{
+    width: 100px;
+    height: 100px;
+   margin-left: 15px;
+    background-color: #CCCCCC;
+}

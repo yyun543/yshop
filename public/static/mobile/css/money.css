@@ -1,0 +1,5 @@
+.money_top{ width:640px; height:500px;height:900px;}
+.money_top .p1{ width:600px; border-bottom:1px solid #f1f0f0; height:80px; line-height:80px; font-size:24px; padding:0px 20px; background:#FFF;}
+.money_top .p1 span{ color:#F00}
+.money_top .p2{ width:600px; height:80px; line-height:80px; font-size:24px; padding:0px 20px;border-bottom:1px solid #f1f0f0;background:#FFF}
+.money_top a{width:630px; height:80px; text-align:center; display:block; background:#EB4F38; color:#fff; line-height:80px;border-radius: 5px; font-size:28px; margin:50px auto 0px auto}

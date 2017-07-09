@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>我的浏览记录</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/browse.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">我的浏览记录</div> 
+                <div class="del-btn iconfont icon-delete1"></div>       
+            </header>    
+            <!--我的浏览记录-->
+            <div class="recordList">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="f-l imgGoods"><img title="商品名" src="/static/mobile/images/good8.png"/></div>
+                        </a>
+                        <a class="f-l" href="#">                        
+                                <p class="recordGoodsName">旺旺 雪饼仙贝 2972g 欢乐箱 零食大礼包</p>
+                                <span class="nowPlace">￥<label>300.00</label></span>
+                                <span class="olderPlace">￥<label>500.00</label></span>
+                         </a>
+                         <div class="remove-btn iconfont icon-roundclose"></div>
+                         <div class="clear"></div>                
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="f-l"><img title="商品名" src="/static/mobile/images/good8.png"/></div>
+                        </a>
+                        <a class="f-l" href="#">                        
+                                <p class="recordGoodsName">旺旺 雪饼仙贝 2972g 欢乐箱 零食大礼包</p>
+                                <span class="nowPlace">￥<label>300.00</label></span>                        
+                         </a>
+                         <div class="remove-btn iconfont icon-roundclose"></div>
+                         <div class="clear"></div>                
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="f-l"><img title="商品名" src="/static/mobile/images/good8.png"/></div>
+                        </a>
+                        <a class="f-l" href="#">                        
+                                <p class="recordGoodsName">旺旺 雪饼仙贝 2972g 欢乐箱 零食大礼包</p>
+                                <span class="nowPlace">￥<label>300.00</label></span>
+                        </a>
+                        <div class="remove-btn iconfont icon-roundclose"></div>      
+                        <div class="clear"></div>               
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="f-l"><img title="商品名" src="/static/mobile/images/good8.png"/></div>
+                        </a>
+                        <a class="f-l" href="#">                        
+                                <p class="recordGoodsName">旺旺 雪饼仙贝 2972g 欢乐箱 零食大礼包</p>
+                                <span class="nowPlace">￥<label>300.00</label></span>
+                                <span class="olderPlace">￥<label>500.00</label></span>
+                        </a>
+                        <div class="remove-btn iconfont icon-roundclose"></div> 
+                        <div class="clear"></div>                
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>        
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    $(".del-btn").click(function(){
+        if($(".del-btn").hasClass("icon-delete1"))
+        {
+            $(this).removeClass("icon-delete1");
+            $(this).addClass("icon-check");
+    	$(".remove-btn").css("display","block");				
+        }else{			
+            $(this).removeClass("icon-check");
+            $(this).addClass("icon-delete1");
+            $(".remove-btn").css("display","none");				
+        }
+    });
+    $(".remove-btn").click(function(){
+        $(this).parent().remove();		
+    });
+</script>    
+</body>
+</html>

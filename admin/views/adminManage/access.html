@@ -1,0 +1,131 @@
+{% extends "common/layout.html" %}
+
+{% block header%}
+{{ include('common/header.html') }}
+{% endblock%}
+
+{% block sidebar %}
+{{ include('common/sidebar.html') }}
+{% endblock%}
+
+{% block left %}
+{{ include('common/left.html') }}
+{% endblock%}
+
+
+{% block right %}
+
+        <!-- 内容区域 -->
+        <div class="tpl-content-wrapper">
+            <div class="row-content am-cf">
+                <div class="row">
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+                        <div class="widget am-cf">
+                            <div class="widget-head am-cf">
+                                <div class="widget-title  am-cf">权限管理</div>
+
+
+                            </div>
+                            <div class="widget-body  am-fr">
+
+                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-6">
+                                    <div class="am-form-group">
+                                        <div class="am-btn-toolbar">
+                                            <div class="am-btn-group am-btn-group-xs">
+                                                <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
+                                    <div class="am-form-group tpl-table-list-select">
+                                        <select data-am-selected="{btnSize: 'sm'}">
+                                          <option value="option1">所有角色</option>
+                                          <option value="option2">超级管理员</option>
+                                          <option value="option3">客服</option>
+                                          <option value="option3">运营</option>
+                                          <option value="option3">供应商</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="am-u-sm-12 am-u-md-12 am-u-lg-3">
+                                    <div class="am-input-group am-input-group-sm tpl-form-border-form cl-p">
+                                        <input type="text" class="am-form-field ">
+                                        <span class="am-input-group-btn">
+            <button class="am-btn  am-btn-default am-btn-success tpl-table-list-field am-icon-search" type="button"></button>
+          </span>
+                                    </div>
+                                </div>
+
+                                <div class="am-u-sm-12">
+                                   
+                                        <ul class="am-list admin-sidebar-list" id="collapase-nav-1">
+                                          <li  class="am-panel">
+                                            <a data-am-collapse="{parent: '#collapase-nav-1'}" href="#/"><i class="am-icon-home am-margin-left-sm"></i> 首页</a>
+                                          </li>
+
+                                          <li class="am-panel">
+                                            <a data-am-collapse="{parent: '#collapase-nav-1', target: '#user-nav'}">
+                                                <i class="am-icon-users am-margin-left-sm"></i> 商品管理 <i class="am-icon-angle-right am-fr am-margin-right"></i>
+                                            </a>
+                                            <ul class="am-list am-collapse admin-sidebar-sub" id="user-nav">
+                                                <li><a href="#/userAdd"><i class="am-icon-user am-margin-left-sm"></i> 添加商品 </a></li>
+                                                <li><a href="#/userList/0"><i class="am-icon-user am-margin-left-sm"></i> 品牌管理 </a></li>
+                                            </ul>
+                                          </li>
+
+                                          <li class="am-panel">
+                                            <a data-am-collapse="{parent: '#collapase-nav-1', target: '#company-nav'}">
+                                                <i class="am-icon-table am-margin-left-sm"></i> 订单管理 <i class="am-icon-angle-right am-fr am-margin-right"></i>
+                                            </a>
+                                            <ul class="am-list am-collapse admin-sidebar-sub" id="company-nav">
+                                                <li><a href="#/companyAdd"><span class="am-icon-table am-margin-left-sm"></span> 添加订单 </a></li>
+                                                <li><a href="#/companyList/0"><span class="am-icon-table am-margin-left-sm"></span> 编辑订单</a></li>
+                                            </ul>
+                                          </li>
+
+                                          <li class="am-panel">
+                                            <a data-am-collapse="{parent: '#collapase-nav-1', target: '#role-nav'}">
+                                                <i class="am-icon-table am-margin-left-sm"></i> 会员管理 <i class="am-icon-angle-right am-fr am-margin-right"></i>
+                                            </a>
+                                            <ul class="am-list am-collapse admin-sidebar-sub" id="role-nav">
+                                                <li><a href="#/roleAdd"><span class="am-icon-table am-margin-left-sm"></span> 会员列表 </a></li>
+                                                <li><a href="#/roleList/0"><span class="am-icon-table am-margin-left-sm"></span> 编辑会员 </a></li>
+                                            </ul>
+                                          </li>
+                                        </ul>
+
+                                </div>
+                                <div class="am-u-lg-12 am-cf">
+
+                                    <div class="am-fr">
+                                        <ul class="am-pagination tpl-pagination">
+                                            <li class="am-disabled"><a href="#">«</a></li>
+                                            <li class="am-active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="/static/admin/assets/js/amazeui.min.js"></script>
+    <script src="/static/admin/assets/js/amazeui.datatables.min.js"></script>
+    <script src="/static/admin/assets/js/dataTables.responsive.min.js"></script>
+    <script src="/static/admin/assets/js/app.js"></script>
+
+
+
+</body>
+
+</html>
+{% endblock%}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-充值</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/acount.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper">
+            <header class="header noborder">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">充值</div>
+            </header>
+            <div class="acount-wrapper">
+                <div class="acount-recharge">
+                    <form method="post" id="recharge_form" action="">
+                        <div class="value">
+                            <p>充值金额<input name="pdr_amount" type="text" class="pdr_amount" id="pdr_amount" maxlength="8" >元</p>
+                        </div>
+                        <button type="button" class="submit mt10" id="confirm_recharge">提&nbsp;&nbsp;交</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="information"></div>
+<!-- 页面加载loading -->
+<div id="pageLoading"></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script>
+    var _e = $("#information");
+    var pattern = /^[\d]+\.?\d*$/;//只能输入数字和 .
+    $("#confirm_recharge").on("click",function(){
+        if($("#pdr_amount").val() != ''){
+            if(pattern.test($("#pdr_amount").val())){
+                //通过验证之后请提交表单
+                //$("#recharge_form").submit();
+            }else{
+                _e.html('<div class="prompt-txt prompt-txt-animate">请输入不是0的数</div>');
+                $("#pdr_amount").focus();
+            }
+        }else{
+            _e.html('<div class="prompt-txt prompt-txt-animate">请输入不是0的数</div>');
+            $("#pdr_amount").focus();
+        }
+    });
+</script>
+</body>
+</html>

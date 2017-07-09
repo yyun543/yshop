@@ -1,0 +1,8 @@
+.ClassifyName{width:140px; height:80px;display:block; line-height:80px; vertical-align:middle; font-size:26px; padding-left:65px; margin-left:25px;}
+.hotClassify{background-image: url(../images/classify1.png);background-position: left center;background-repeat: no-repeat;}
+.relaxation{background-image: url(../images/classify2.png);background-position: left center;background-repeat: no-repeat;}
+.fitment{background-image: url(../images/classify3.png);background-position: left center;background-repeat: no-repeat;}
+.shoppimg{background-image: url(../images/classify4.png);background-position: left center;background-repeat: no-repeat;}
+.allClassify{padding-bottom: 50px;background: #f2f2f2;}
+.allClassify ul{ padding-left:20px;overflow: hidden;}
+.allClassify ul li a{width:140px; height:80px;display:block; line-height:80px; vertical-align:middle; text-align:center; float:left; background-color:#FFF; margin:5px;}

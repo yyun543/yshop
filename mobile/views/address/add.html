@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-添加收货地址</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/address.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper register">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">添加收货地址</div>
+            </header>
+
+
+            <!--收货人姓名-->
+            <div class="address2">
+                <div class="address2_box">
+                    <label for="name" class="span1">
+                        <input name="name" id="name" placeholder="点击输入收货人姓名">
+                    </label>
+                </div>
+            </div>
+
+
+            <!--手机号码-->
+            <div class="address2">
+                <div class="address2_box">
+                    <label for="phone" class="span1">
+                        <input name="phone" id="phone" placeholder="点击输入手机号码">
+                    </label>
+                </div>
+            </div>
+
+
+            <!--邮政编码-->
+            <div class="address2">
+                <div class="address2_box">
+                    <label for="code" class="span1">
+                        <input name="code" id="code" placeholder="点击输入邮政编码">
+                    </label>
+                </div>
+            </div>
+
+            <!--省份-->
+            <div class="address2">
+                <div class="address2_box" id="provinces">
+                    <a href="javascript:;">
+                        <span class="span1">省份</span>
+                        <span class="span3"> <i class="iconfont icon-right"></i></span>
+                    </a>
+                </div>
+                <div class="provinces">
+                    <span>上海</span>
+                    <span>北京</span>
+                    <span>广西</span>
+                    <span>广东</span>
+                    <span>湖南</span>
+                    <span>湖北</span>
+                    <span>四川</span>
+                    <span>贵州</span>
+                    <span>海南</span>
+                    <span>甘肃</span>
+                    <span>浙江</span>
+                    <span>河北</span>
+                </div>
+            </div>
+
+
+            <!--城市-->
+            <div class="address2">
+                <div class="address2_box" id="city">
+                    <a href="javascript:;">
+                        <span class="span1">城市</span>
+                        <span class="span3"> <i class="iconfont icon-right"></i></span>
+                    </a>
+                </div>
+                <div class="city">
+                    <span>上海</span>
+                    <span>北京</span>
+                    <span>上海</span>
+                    <span>北京</span>
+                    <span>上海</span>
+                    <span>北京</span>
+                    <span>上海</span>
+                    <span>北京</span>
+                    <span>上海</span>
+                    <span>北京</span>
+                </div>
+            </div>
+
+
+
+            <!--区县-->
+            <div class="address2">
+                <div class="address2_box" id="county">
+                    <a href="javascript:;">
+                        <span class="span1">区县</span>
+                        <span class="span3"><i class="iconfont icon-right"></i></span>
+                    </a>
+                </div>
+                <div class="county">
+                    <span>七星区</span>
+                    <span>象山区</span>
+                    <span>七星区</span>
+                    <span>七星区</span>
+                    <span>七星区</span>
+                    <span>七星区</span>
+                </div>
+            </div>
+
+            <!--街道-->
+            <div class="address2 mb80">
+                <div class="address2_box">
+                    <a href="javascript:;">
+                        <span class="span1"><input type="text" name="street" id="street" placeholder="点击输入街道"></span>
+                    </a>
+                </div>
+            </div>
+            <!--底部固定-->
+            <div class="bottom" id="conserve-addr"><a href="javascript:;">保存收货地址</a></div>
+        </div>
+    </div>
+</div>
+<!-- 提示信息 -->
+<div class="prompt-txt" id="prompt-txt">保存成功</div>
+<div id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    //展开收起
+    $("#provinces,#city,#county").on("click",function(){
+        $(this).parent().toggleClass("foldchild");
+    });
+
+    //提示信息
+    $("#conserve-addr").on("click",function(){
+        $("#prompt-txt").addClass("prompt-animate-down");
+    });
+</script>
+</body>
+</html>

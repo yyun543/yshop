@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>鑫鑫超市-管理收货地址</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/address.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+        <div class="wrapper register">
+            <header class="header noborder">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">管理收货地址</div>
+            </header>
+        </div>
+        <!--管理收货地址列表-->
+        <div class="address" id="address">
+            <ul>
+                <li class="default">
+                    <div class="box">
+                        <div class="address_l">
+                            <div class="txt">
+                                <div class="txt_left">
+                                    <span class="name" style="float:left;">收货人：覃德忠</span>
+                                    <span class="phone" style="float:right; margin-right:10px"> 18007832688</span>
+                                </div>
+                                <div class="addres" style="float:left; font-size:24px">地址：广西 桂林 七星区 桂林市高新区国家信息产业园 8-3号办公楼</div>
+                            </div>
+                            <div class="lab">
+                                <i class="iconfont icon-selectfill"></i>
+                            </div>
+                        </div>
+                        <div class="address_m delete b_l">
+                            <i class="iconfont icon-discover"></i>
+                        </div>
+                        <div class="address_r confirm b_l">
+                            <i class="iconfont icon-unfold"></i>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="address_l">
+                            <div class="txt">
+                                <div class="txt_left">
+                                    <span class="name" style="float:left;">收货人：覃德忠</span>
+                                    <span class="phone" style="float:right; margin-right:10px"> 18007832688</span>
+                                </div>
+                                <div class="addres" style="float:left; font-size:24px">地址：广西 桂林 七星区 桂林市高新区国家信息产业园 8-3号办公楼</div>
+                            </div>
+                            <div class="lab">
+                                <i class="iconfont icon-selectfill"></i>
+                            </div>
+                        </div>
+                        <div class="address_m delete b_l">
+                            <i class="iconfont icon-discover"></i>
+                        </div>
+                        <div class="address_r confirm b_l">
+                            <i class="iconfont icon-unfold"></i>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <div class="address_l">
+                            <div class="txt">
+                                <div class="txt_left">
+                                    <span class="name" style="float:left;">收货人：覃德忠</span>
+                                    <span class="phone" style="float:right; margin-right:10px"> 18007832688</span>
+                                </div>
+                                <div class="addres" style="float:left; font-size:24px">地址：广西 桂林 七星区 桂林市高新区国家信息产业园 8-3号办公楼</div>
+                            </div>
+                            <div class="lab">
+                                <i class="iconfont icon-selectfill"></i>
+                            </div>
+                        </div>
+                        <div class="address_m delete b_l">
+                            <i class="iconfont icon-discover"></i>
+                        </div>
+                        <div class="address_r confirm b_l">
+                            <i class="iconfont icon-unfold"></i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box left320">
+                        <div class="address_l">
+                            <div class="txt">
+                                <div class="txt_left">
+                                    <span class="name" style="float:left;">收货人：覃德忠</span>
+                                    <span class="phone" style="float:right; margin-right:10px"> 18007832688</span>
+                                </div>
+                                <div class="addres" style="float:left; font-size:24px">地址：广西 桂林 七星区 桂林市高新区国家信息产业园 8-3号办公楼</div>
+                            </div>
+                            <div class="lab">
+                                <i class="iconfont icon-selectfill"></i>
+                            </div>
+                        </div>
+                        <div class="address_m delete b_l">
+                            <i class="iconfont icon-discover"></i>
+                        </div>
+                        <div class="address_r confirm b_l">
+                            <i class="iconfont icon-unfold"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--底部固定-->
+        <div class="address2_bottom"><a href="address2.html">新增收货地址</a></div>
+    </div>
+</div>
+
+
+<div id="information"></div>
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    var _e = $("#information");
+
+    //编辑每一个地址
+    $(".address_l").each(function(){
+        $(".address_l").on("click",function(){
+            $(this).parent().parent().addClass("actived").siblings().removeClass("actived");
+        });
+    });
+    //设为默认
+    $(".confirm").each(function(){
+        $(this).on("click",function(){
+            $(".address ul li").removeClass("actived");
+            $(".address ul li").removeClass("default");
+            $(this).parent().parent().addClass("default");
+            _e.html('<div class="prompt-txt prompt-txt-animate"><p>设置成功~</p></div>');//提示信息
+        });
+    });
+    //删除某个地址项
+    $(".delete").each(function(){
+        $(this).on("click",function(){
+            $(this).parent().parent().remove();
+            _e.html('<div class="prompt-txt prompt-txt-animate"><p>删除成功~</p></div>');//提示信息
+        });
+    });
+</script>
+</body>
+</html>

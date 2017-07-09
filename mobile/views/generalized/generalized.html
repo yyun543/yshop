@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>堆乐族-我的推广</title>
+    <link rel="stylesheet" href="/static/mobile/css/iconfont.css">
+    <link rel="stylesheet" href="/static/mobile/css/public.css">
+    <link rel="stylesheet" href="/static/mobile/css/generalized.css">
+</head>
+<body>
+<div class="dlz-wrapper" id="dlz-wrapper">
+    <div class="main"><!-- 页面主要内容展示 -->
+      <div class="wrapper">
+            <header class="header">
+                <div class="back-btn iconfont icon-back1" id="backHistory"></div>
+                <div class="header-title">我的推广</div>        
+            </header>
+            <div class="generalized-wrap">
+                <div class="notices"><span class="iconfont icon-info mr20"></span>提示：请长按推广链接地址进行复制</div>
+                <div class="g-list">
+                    <!-- 单个推广开始 -->
+                    <div class="g-unit">
+                        <div class="shop-logo f-l"><a href=""><img src="/static/mobile/images/shop-logo.png"></a></div>
+                        <h3 class="shop-name txt-hidden">名称名称名称名称名称</h3>
+                        <div class="shop-info mt10">
+                            <div class="addr"><i class="iconfont icon-location mr20"></i>七星区解放东路文化大厦五楼</div>
+                            <div class="tel"><i class="iconfont icon-phone mr20"></i><span class="mr20">3627887</span><span class="mr20">3627887</span></div>                            
+                        </div>
+                        <p class="txt mt10 mb10">推广链接：</p>
+                        <p><input type="text" class="the-link"></p>
+                        <div class="qrcode">
+                            <img src="/static/mobile/images/qrcode.jpg">
+                        </div>
+                    </div>
+                    <!-- 单个推广结束 -->
+                    <!-- 单个推广开始 -->
+                    <div class="g-unit">
+                        <div class="shop-logo f-l"><a href=""><img src="/static/mobile/images/shop-logo.png"></a></div>
+                        <h3 class="shop-name txt-hidden">名称名称名称名称名称</h3>
+                        <div class="shop-info mt10">
+                            <div class="addr"><i class="iconfont icon-location mr20"></i>七星区解放东路文化大厦五楼</div>
+                            <div class="tel"><i class="iconfont icon-phone mr20"></i><span class="mr20">3627887</span><span class="mr20">3627887</span></div>                            
+                        </div>
+                        <p class="txt mt10 mb10">推广链接：</p>
+                        <p><input type="text" class="the-link"></p>
+                        <div class="qrcode">
+                            <img src="/static/mobile/images/qrcode.jpg">
+                        </div>
+                    </div>
+                    <!-- 单个推广结束 -->
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+<div class="pageLoading" id="pageLoading"><!-- 页面加载loading --></div>
+<script src="/static/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="/static/mobile/js/common.js"></script>
+<script type="text/javascript">
+    var winH = $(window).height();
+    $("#generalized-nav li").on("click",function(){
+        var _id = $(this).attr("data-val");
+        $(this).addClass("active").siblings().removeClass("active");
+        GeneralizedNavMove(_id);
+    });
+    var GeneralizedNavMove = function(id){
+        $("#generalized-nav .gw-btn").css("left",200*(id-1)+5);
+        $("#gw-c-list").css("margin-left",-640*(id-1));
+    }
+</script>    
+</body>
+</html>

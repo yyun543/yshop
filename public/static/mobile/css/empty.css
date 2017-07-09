@@ -1,0 +1,18 @@
+/************************************************************************内容为空的页面**/
+.empty_box{ width:640px}
+.empty_top{width:150px; height:150px; border-radius:100px; background:#CCC; margin:170px auto 60px auto; text-align:center; line-height:150px; font-size:80px; color:#FFF}
+.empty_bottom{width:500px; height:180px;margin:40px auto 0px auto}
+.empty_bottom h2{color:#666; font-size:30px; height:50px; line-height:50px; text-align:center; margin:0 auto}
+.empty_bottom p{color:#999; font-size:22px; height:50px; line-height:50px; margin:0 auto; text-align:center}
+.empty_bottom a.empty-orenge-btn{display:block;width:150px; height:80px;margin: 0 auto;border-radius: 5px;text-align:center;line-height: 80px;background: #ff8000;color: #fff;font-size: 24px;}
+.empty_bottom a.empty-blue-btn{display:block;width:200px; height:80px;margin: 0 auto;border-radius: 5px;text-align:center;line-height: 80px;background: #00a3d9;color: #fff;font-size: 24px;}
+
+.order_menu{ width:640px; height:80px; background:#fff}
+.order_menu ul li{ height:80px; line-height:80px; float:left; width:128px}
+.order_menu ul li a{  width:128px;height:76px; display:inline-block; text-align:center; font-size:26px;}
+.order_menu ul li.hover a{ border-bottom:4px solid #ff8000; color:#ff8000}
+
+
+
+/*搜索按钮*/
+.search-btn{position: absolute;top: 0;right: 0;height: 80px;width: 80px;text-align: center; font-size:50px;}

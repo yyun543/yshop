@@ -1,0 +1,59 @@
+/*********************************************************************************头部 */
+.header-wrap .seach-c{margin: 10px 0 0 85px;height: 60px;width: 340px;border-radius: 5px;overflow: hidden;background: rgba(255,255,255,0.85);}
+.header-wrap .seach-c input.input-txt{width: 280px;height: 60px;padding: 0 5px;font-size: 24px; background: none;}
+.header-wrap .seach-c button.input-submit{width: 50px;height: 60px;line-height: 50px;font-size: 38px;color: #BEBEBE;background: none;cursor: pointer;}
+.header-wrap .header-r span a{float: left; display: block;width: 80px;height: 80px;line-height: 80px;text-align: center;font-size: 40px;color: #696969;}
+.goodlist .header-wrap{position: relative;z-index: 9;width: 640px;height: 80px;background: #fff;border-bottom: 1px solid #e5e5e5;}
+.goodlist .header-wrap .back{position: absolute;top: 0;left: 0;width: 80px;height: 80px;line-height: 80px;text-align: center;font-size: 30px;}
+.goodlist .header-wrap .back span{font-size: 30px;}
+.goodlist .header-wrap .seach-c{width: 475px;background: #e5e5e5;}
+.goodlist .header-wrap .seach-c input.input-txt{width: 415px;padding: 0 5px;}
+.goodlist .header-wrap .header-r{position: relative;}
+.goodlist .header-wrap .header-r span b{position: absolute;top: 20px;left: 45px;display: block;width: 16px;height: 16px;border-radius: 50%;background: #EB4F38;}
+.goodlist .header-wrap .more-btn{position: absolute;top: 0;right: 0;width: 80px;height: 80px;text-align: center;line-height: 80px;font-size: 30px;}
+
+
+/* ********************************************************************************产品列表 */
+.productShowList{padding-top: 4px;overflow: hidden;background: #f2f2f2;}
+.productShowItem{width:318px;height:430px;position: relative;float: left;margin: 0px 4px  4px 0px;background: #fff;box-shadow:0px 0px 2px #d3d3d3;}
+.productShowList li:nth-child(2n){margin-right: 0;}
+.productShowItem a img{width: 318px;height: 318px;}
+.productShowItem .shadow{position: absolute;bottom: -4px;left: 0px;width:308px;height:4px;background: url("../images/shadow.png") top center no-repeat;}
+.productShowItem .mark{position: absolute;top: 8px;left: 8px;}
+.productName{display: block;width: 288px;height:64px;margin-left:10px;overflow: hidden;text-overflow:ellipsis;font-size: 23px;margin-bottom: 5px;}
+.productShowItem .icon{margin-top: 5px;margin-right: 5px;}
+.nowPrice{color: #f35628;margin-left:10px;font-size: 20px;}
+.productShowItem .nowPrice label{font-size: 28px;}
+.productShowItem .orightPrice{margin-top: 9px;}
+.ratings{display: none;}
+del{margin-left: 10px;display: none;}
+
+
+
+
+
+/*********************************************************************************置顶*/
+.gotocart-link{display: none;}
+.gotocart-link a{position: fixed;bottom:150px;right:20px;z-index: 99;display: block;width: 70px;height: 70px;border-radius: 50%;line-height: 70px;text-align: center;font-size: 40px;color: #fff;background: rgba(0,0,0,0.5);}
+.gotocart-link a b{position: absolute;top: 15px;left: 42px;display: block;width: 16px;height: 16px;border-radius: 50%;background: #f35628;}
+
+
+/* ********************************************************************************切换 */
+.select-wrap{position: relative;width: 640px;height: 70px;background: #fff;}
+.goodlist .select-c{width: 100%;height: 70px;background: #fff;font-size: 20px;line-height: 70px;overflow: hidden;}
+.goodlist .select-c .select-c-x1{width: 450px;}
+.goodlist .select-c .select-c-x1 ul li{display: block;width: 150px;float: left;text-align: center;  font-size: 25px;}
+.goodlist .select-c .select-c-x1 ul li.active a{color: #f35628;}
+.goodlist .select-c .select-c-x1 ul li a span{width: 20px;height: 20px;margin-left: 5px;font-size: 24px;color: #999;}
+.goodlist .select-c .select-c-x1 ul li.active a span{color: #f35628;}
+.goodlist .select-c .select-c-x2{width: 190px;margin-left: -1px;border-left: 1px solid #e5e5e5;}
+.goodlist .select-c .select-c-x2 label.f-r a span{display: block;width: 80px;height: 70px;text-align: center;line-height: 70px; font-size: 36px;}
+.goodlist .select-c .select-c-x2 label#filter{width: 80px;text-align: center;padding-left: 15px;font-size: 24px;}
+.goodlist .select-c .select-c-x2 label#filter .iconfont{font-size: 30px;margin-left: 5px;}
+
+
+/**********************************************************************************loading动画*/
+#caseMarronFonce {display: none;height: 40px;width: 640px;padding: 20px 0;background: url("../images/load-icon.png") center 28px no-repeat;overflow: hidden;}
+#spinner {height : 40px;width : 40px;border : 2px solid transparent;border-left-color : #f53800;border-right-color : #004290;border-radius : 50%;animation : spin 1s linear  infinite;-webkit-animation : spin 1s linear  infinite;margin:0 auto;}
+@-webkit-keyframes spin {0% {-webkit-transform : rotate(0deg);}100% {-webkit-transform : rotate(360deg);}}
+@keyframes spin {0% {transform : rotate(0deg);}100% {transform : rotate(360deg);}}
